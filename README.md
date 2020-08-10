@@ -36,8 +36,8 @@ A MERN project developed by Jeff Varela, Matthew Greer, and Rob Kornblum
 
 - Day 2: Seeding website with artworks and adding search functionality 
          - Rob Kornblum: tasked with adding artwork schema and other related backend requirements 
-         - Matthew Greer: tsked with stylizing frontend site to display artwork and video functionality 
-         - Jeff Varela: tasked with integrating search API that searched either video or artwork images. This is also be collaborated with other members. 
+         - Matthew Greer: tasked with stylizing frontend site to display artwork and video functionality 
+         - Jeff Varela: tasked with integrating search API that searches either video or artwork images. This is also be collaborated with other members. 
          
 - Day 3: Debugging and Stylizing 
         - each member will be responsible for testing and debugging on all fronts and stylizing the webpage. 
