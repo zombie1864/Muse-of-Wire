@@ -1,0 +1,19 @@
+{
+  "name": "muse-of-wire",
+  "version": "1.0.0",
+  "description": "A MERN project developed by Jeff Varela, Matthew Greer, and Rob Kornblum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombie1864/Muse-of-Wire.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zombie1864/Muse-of-Wire/issues"
+  },
+  "homepage": "https://github.com/zombie1864/Muse-of-Wire#readme"
+}
