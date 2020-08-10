@@ -8,7 +8,6 @@ const users = require("./routes/api/users");
 
 mongoose
   .connect(db, { useNewUrlParser: true })
-  // for testing
   .then(() => console.log("Connected to MongoDB successfully"))
   .catch((err) => console.log(err));
 

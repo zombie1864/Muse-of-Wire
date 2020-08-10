@@ -65,7 +65,7 @@ router.post("/login", (req, res) => {
 
   User.findOne({ email }).then((user) => {
     if (!user) {
-      return res.status(404).json({ email: "No account with this email address."})
+      return res.status(404).json({ email: "Email not found - please enter a valid email"})
     }
 
     bcrypt.compare(password, user.password).then((isMatch) => {
@@ -83,7 +83,7 @@ router.post("/login", (req, res) => {
             });
           });
         } else {
-          errors.password = "Password doesn't match";
+          errors.password = "Invalid password";
           return res.status(400).json(errors);
         }
     });
