@@ -30,7 +30,19 @@ A MERN project developed by Jeff Varela, Matthew Greer, and Rob Kornblum
 
 # Day-to-Day Work 
  - Day 1: Backend and frontend user auth with video integration 
-          * Rob Kornblum: tasked with user auth on the backend 
-          * Matthew Greer: tasked with user auth on the frontend 
-          * Jeff Varela: tasked with video integration on backend and frontend 
-          
+          - Rob Kornblum: tasked with user auth on the backend 
+          - Matthew Greer: tasked with user auth on the frontend 
+          - Jeff Varela: tasked with video integration on backend and frontend 
+
+- Day 2: Seeding website with artworks and adding search functionality 
+         - Rob Kornblum: tasked with adding artwork schema and other related backend requirements 
+         - Matthew Greer: tsked with stylizing frontend site to display artwork and video functionality 
+         - Jeff Varela: tasked with integrating search API that searched either video or artwork images. This is also be collaborated with other members. 
+         
+- Day 3: Debugging and Stylizing 
+        - each member will be responsible for testing and debugging on all fronts and stylizing the webpage. 
+        
+- Day 4: Debugging, testing, and stylizing 
+       - testing to see if our website works correctly when deployed to heroku. Combing all branches into master branch. Further stylizing the webpage to final production. 
+       
+- Further ahead: adding live stream functionality.   
