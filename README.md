@@ -27,3 +27,10 @@ A MERN project developed by Jeff Varela, Matthew Greer, and Rob Kornblum
 - Jeff Varela - Team lead 
 - Matthew Greer - Frontend lead 
 - Rob Kornblum - backend lead 
+
+# Day-to-Day Work 
+ - Day 1: Backend and frontend user auth with video integration 
+          * Rob Kornblum: tasked with user auth on the backend 
+          * Matthew Greer: tasked with user auth on the frontend 
+          * Jeff Varela: tasked with video integration on backend and frontend 
+          
