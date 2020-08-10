@@ -2,7 +2,7 @@
   "name": "muse-of-wire",
   "version": "1.0.0",
   "description": "A MERN project developed by Jeff Varela, Matthew Greer, and Rob Kornblum",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/zombie1864/Muse-of-Wire/issues"
   },
-  "homepage": "https://github.com/zombie1864/Muse-of-Wire#readme"
+  "homepage": "https://github.com/zombie1864/Muse-of-Wire#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.28",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
