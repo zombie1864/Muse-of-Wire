@@ -19,6 +19,14 @@ const VideoSchema = new Schema(
       type: String,
       required: true,
     },
+    runTime: {
+      type: Number,
+      required: true
+    },
+    mature: {
+      type: Boolean,
+      required: true
+    }
   },
   {
     timestamps: true,

@@ -6,21 +6,22 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const users = require("./routes/api/users");
 
-app.use(passport.initialize());
-require("./config/passport")(passport);
-
 mongoose
   .connect(db, { useNewUrlParser: true })
   // for testing
   .then(() => console.log("Connected to MongoDB successfully"))
   .catch((err) => console.log(err));
 
-const port = process.env.PORT || 5000;
+app.get("/", (req, res) => res.send("Welcome to Muse of Wire!!"));
 
-// for testing
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+app.use(passport.initialize());
+require("./config/passport")(passport);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/api/users", users);
+
+// for testing
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Server is running on port ${port}`));
