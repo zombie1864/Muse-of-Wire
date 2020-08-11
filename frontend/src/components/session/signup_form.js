@@ -55,6 +55,8 @@ class SignupForm extends React.Component {
   }
 
   render() {
+
+    debugger
     return (
       <form className="session-form signup" onSubmit={this.handleSubmit}>
         <div>
