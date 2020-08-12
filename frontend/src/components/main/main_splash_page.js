@@ -4,12 +4,12 @@ class MainSplashPage extends React.Component {
 
   render() {
     return(
-      <main>
-        <h1>Muse of Wire</h1>
+      <div>
+        <div className = 'home-page-title'>Muse of Wire</div>
         <p>
           Keeping people plugged-in to the Arts
         </p>
-      </main>
+      </div>
     )
   }
 
