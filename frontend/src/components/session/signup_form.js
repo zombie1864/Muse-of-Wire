@@ -130,8 +130,8 @@ class SignupForm extends React.Component {
           </div>
         </form>
         <img src='https://lh3.google.com/u/0/d/1kYbYz7q2qiOyDO9cTTMrVlEvu71s9z4k=w1627-h893-iv1' width = '630' height = '420'/>
-        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width = '630' height = '420'/>
-        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width = '630' height = '420'/>
+        <img src='https://lh3.google.com/u/0/d/1EW9SXfumD1K3fOulIFsuNZjSWs5IyGVU=w1627-h893-iv1' width = '630' height = '420'/>
+        <img src='https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' width = '630' height = '420'/>
       </div>
     );
   }

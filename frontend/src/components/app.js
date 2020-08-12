@@ -7,18 +7,18 @@ import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import '../stylesheet/home-page-title.css'
 import '../stylesheet/session-form-input-field.css'
-// import ShowVideoContainer from './videos/show_video_container'; 
-// import IndexVideoContainer from './videos/video_index_container'; 
+import MainHomePageContainer from './main/main_home_page_container'
 
 const App = () => (
   <div>
     <NavBarContainer />
-    <Switch>
-      {/* < Route path = '/api/videos/:id' component={ShowVideoContainer}/> */}
-      <AuthRoute exact path="/" component={MainSplashPage} />
-      <AuthRoute exact path="/login" component={LoginFormContainer} />
-      <AuthRoute exact path="/signup" component={SignupFormContainer} />
-    </Switch>
+ 
+    {/* < Route path = '/api/videos/:id' component={ShowVideoContainer}/> */}
+    <AuthRoute exact path="/" component={MainSplashPage} />
+    <AuthRoute exact path="/login" component={LoginFormContainer} />
+    <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    <ProtectedRoute exact path="/" component={MainHomePageContainer} />
+
   </div>
 );
 

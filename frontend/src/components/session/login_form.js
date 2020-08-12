@@ -82,8 +82,8 @@ class LoginForm extends React.Component {
           {this.renderErrors()}
         </form>
         <img src='https://lh3.google.com/u/0/d/1ivkXBSqV--ySA-0-KYwEv7k5hDIKKfK0=w3078-h1564-iv1' width='630' height='420' />
-        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width='630' height='420' />
-        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width='630' height='420' />
+        <img src='https://lh3.google.com/u/0/d/1AWNT1KaKvkVcHsVTPpuqIgF9m5UZICBZ=w3078-h1564-iv1' width='630' height='420' />
+        <img src='https://lh3.google.com/u/0/d/1vXsJHmfv-kPQWh0XRA1QXz5IjygNRYiY=w3078-h1564-iv1' width='630' height='420' />
       </div>
     );
   }
