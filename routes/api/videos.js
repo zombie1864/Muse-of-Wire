@@ -1,12 +1,13 @@
 const express = require('express'); 
 const router = express.Router(); 
 const mongoose = require('mongoose'); 
-
 const Video = require('../../models/Video');
+// const video = require('../../seed/videoSeed')
+const videoArr = require('../../seed/videoSeed')
 
 router.get('/', ( req, res ) => {
-    Video.find()
-        .then(videos => res.json(videos))
+    videoArr.find()
+        .then(video => res.json({video}))
 }); 
 
 router.get('/videos/:id', (req, res) => {
@@ -15,4 +16,4 @@ router.get('/videos/:id', (req, res) => {
         .catch(err => res.status(404).json({ noVideoFound: 'you are not authorized to view this content'}))
 })
 
-moduke.exports = router 
+module.exports = router; 
