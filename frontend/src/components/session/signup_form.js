@@ -21,6 +21,8 @@ class SignupForm extends React.Component {
     if (nextProps.signedIn === true) {
       this.props.history.push("/");
     }
+
+    
     this.setState({ errors: nextProps.errors });
   }
 
@@ -32,6 +34,7 @@ class SignupForm extends React.Component {
   }
 
   handleSubmit(e) {
+    
     e.preventDefault();
     let user = {
       email: this.state.email,
@@ -43,6 +46,7 @@ class SignupForm extends React.Component {
   }
 
   renderErrors() {
+    
     return (
       <ul className="rendered-errors-list">
         {Object.keys(this.state.errors).map((error, i) => (
@@ -55,6 +59,8 @@ class SignupForm extends React.Component {
   }
 
   render() {
+
+    
     return (
       <form className="session-form signup" onSubmit={this.handleSubmit}>
         <div>

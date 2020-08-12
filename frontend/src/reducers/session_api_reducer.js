@@ -12,6 +12,9 @@ const initialState = {
 export default function (state = initialState, action) {
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
+
+      
+
       return {
         ...state,
         isAuthenticated: !!action.currentUser,
@@ -23,6 +26,9 @@ export default function (state = initialState, action) {
         user: undefined
       };
     case RECEIVE_USER_SIGN_IN:
+
+      
+
       return {
         ...state,
         isSignedIn: true

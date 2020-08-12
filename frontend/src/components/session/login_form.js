@@ -78,6 +78,7 @@ class LoginForm extends React.Component {
             value="Submit"
           />
         </div>
+        {this.renderErrors()}
       </form>
     );
   }
