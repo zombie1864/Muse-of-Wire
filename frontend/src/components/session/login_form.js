@@ -52,34 +52,39 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <form className="session-form login" onSubmit={this.handleSubmit}>
-        <div>
-          <input
-            className="session-form-input-field"
-            type="text"
-            value={this.state.email}
-            onChange={this.update("email")}
-            placeholder="Email"
-          />
-        </div>
-        <div>
-          <input
-            className="session-form-input-field"
-            type="password"
-            value={this.state.password}
-            onChange={this.update("password")}
-            placeholder="Password"
-          />
-        </div>
-        <div>
-          <input
-            className="session-form-submit-button"
-            type="submit"
-            value="Submit"
-          />
-        </div>
-        {this.renderErrors()}
-      </form>
+      <div>
+        <form className="session-form login" onSubmit={this.handleSubmit}>
+          <div>
+            <input
+              className="session-form-input-field"
+              type="text"
+              value={this.state.email}
+              onChange={this.update("email")}
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <input
+              className="session-form-input-field"
+              type="password"
+              value={this.state.password}
+              onChange={this.update("password")}
+              placeholder="Password"
+            />
+          </div>
+          <div>
+            <input
+              className="session-form-submit-button"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+          {this.renderErrors()}
+        </form>
+        <img src='https://lh3.google.com/u/0/d/1ivkXBSqV--ySA-0-KYwEv7k5hDIKKfK0=w3078-h1564-iv1' width='630' height='420' />
+        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width='630' height='420' />
+        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width='630' height='420' />
+      </div>
     );
   }
 }

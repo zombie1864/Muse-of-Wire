@@ -62,6 +62,7 @@ class SignupForm extends React.Component {
 
     
     return (
+      <div>
       <form className="session-form signup" onSubmit={this.handleSubmit}>
         <div>
           <input
@@ -72,62 +73,66 @@ class SignupForm extends React.Component {
             placeholder="Email"
           />
           <div>
-            <label>
-              <input
-                type="radio"
-                className="session-form-radio-selector"
-                name="account-status"
-                value="performer"
-                checked={this.state.selectedStatus === "performer"}
-                onChange={this.update("selectedStatus")}
-              />
-              Performer
-            </label>
+              <label>
+                <input
+                  type="radio"
+                  className="session-form-radio-selector"
+                  name="account-status"
+                  value="performer"
+                  checked={this.state.selectedStatus === "performer"}
+                  onChange={this.update("selectedStatus")}
+                />
+                Performer
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="radio"
+                  className="session-form-radio-selector"
+                  name="account-status"
+                  value="student"
+                  checked={this.state.selectedStatus === "student"}
+                  onChange={this.update("selectedStatus")}
+                />
+                Student
+              </label>
+            </div>
+            <div>
+              <label>
+                <input
+                  type="radio"
+                  className="session-form-radio-selector"
+                  name="account-status"
+                  value="member"
+                  checked={this.state.selectedStatus === "member"}
+                  onChange={this.update("selectedStatus")}
+                />
+                Member
+              </label>
+            </div>
+            <input
+              className="session-form-input-field"
+              type="password"
+              value={this.state.password}
+              onChange={this.update("password")}
+              placeholder="Password"
+            />
+            <input
+              className="session-form-input-field"
+              type="password"
+              value={this.state.password2}
+              onChange={this.update("password2")}
+              placeholder="Confirm Password"
+            />
+            <input type="submit" value="Submit" />
+            {this.renderErrors()}
           </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                className="session-form-radio-selector"
-                name="account-status"
-                value="student"
-                checked={this.state.selectedStatus === "student"}
-                onChange={this.update("selectedStatus")}
-              />
-              Student
-            </label>
-          </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                className="session-form-radio-selector"
-                name="account-status"
-                value="member"
-                checked={this.state.selectedStatus === "member"}
-                onChange={this.update("selectedStatus")}
-              />
-              Member
-            </label>
-          </div>
-          <input
-            className="session-form-input-field"
-            type="password"
-            value={this.state.password}
-            onChange={this.update("password")}
-            placeholder="Password"
-          />
-          <input
-            className="session-form-input-field"
-            type="password"
-            value={this.state.password2}
-            onChange={this.update("password2")}
-            placeholder="Confirm Password"
-          />
-          <input type="submit" value="Submit" />
-          {this.renderErrors()}
-        </div>
-      </form>
+        </form>
+        <img src='https://lh3.google.com/u/0/d/1kYbYz7q2qiOyDO9cTTMrVlEvu71s9z4k=w1627-h893-iv1' width = '630' height = '420'/>
+        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width = '630' height = '420'/>
+        <img src='https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500' width = '630' height = '420'/>
+      </div>
     );
   }
 }
