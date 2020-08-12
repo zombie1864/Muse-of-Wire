@@ -5,7 +5,7 @@ import NavBarContainer from "./nav/navbar_container";
 import MainSplashPage from "./main/main_splash_page";
 import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
-import '../stylesheets/application.scss';
+import "../stylesheets/application.scss"
 // import ShowVideoContainer from './videos/show_video_container'; 
 // import IndexVideoContainer from './videos/video_index_container'; 
 
