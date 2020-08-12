@@ -13,7 +13,7 @@ export default function (state = initialState, action) {
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
 
-      debugger
+      
 
       return {
         ...state,
@@ -27,7 +27,7 @@ export default function (state = initialState, action) {
       };
     case RECEIVE_USER_SIGN_IN:
 
-      debugger
+      
 
       return {
         ...state,
