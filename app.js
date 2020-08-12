@@ -6,12 +6,13 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const users = require("./routes/api/users");
 
+require('dotenv').config();
+
 mongoose
 .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log("Connected to MongoDB successfully"))
 .catch((err) => console.log(err));
 
-require('dotenv').config();
 
 app.get("/", (req, res) => res.send("Welcome to Muse of Wire!!"));
 
