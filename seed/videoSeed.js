@@ -3,33 +3,33 @@ const mongoose = require('mongoose');
 
 // export const seedVideo = () => {
 
-    export const videoArr = {
+    // export const videoArr = {
 
-        video: {
-            title: 'song', 
-            description: 'music', 
-            videoUrl: 'https://www.youtube.com/watch?v=rKfDf3KZn3M', 
-            imgUrl: 'https://vaporwavebomb.tumblr.com/image/623062623236308992', 
-            runTime: 6.04, 
-            mature: false 
-        },
-        video: {
-            title: 'song', 
-            description: 'music', 
-            videoUrl: 'https://www.youtube.com/watch?v=rKfDf3KZn3M', 
-            imgUrl: 'https://vaporwavebomb.tumblr.com/image/623062623236308992', 
-            runTime: 6.04, 
-            mature: false 
-        },
-        video: {
-            title: 'song', 
-            description: 'music', 
-            videoUrl: 'https://www.youtube.com/watch?v=rKfDf3KZn3M', 
-            imgUrl: 'https://vaporwavebomb.tumblr.com/image/623062623236308992', 
-            runTime: 6.04, 
-            mature: false 
-        }
-    }
+    //     video: {
+    //         title: 'song', 
+    //         description: 'music', 
+    //         videoUrl: 'https://www.youtube.com/watch?v=rKfDf3KZn3M', 
+    //         imgUrl: 'https://vaporwavebomb.tumblr.com/image/623062623236308992', 
+    //         runTime: 6.04, 
+    //         mature: false 
+    //     },
+    //     video: {
+    //         title: 'song', 
+    //         description: 'music', 
+    //         videoUrl: 'https://www.youtube.com/watch?v=rKfDf3KZn3M', 
+    //         imgUrl: 'https://vaporwavebomb.tumblr.com/image/623062623236308992', 
+    //         runTime: 6.04, 
+    //         mature: false 
+    //     },
+    //     video: {
+    //         title: 'song', 
+    //         description: 'music', 
+    //         videoUrl: 'https://www.youtube.com/watch?v=rKfDf3KZn3M', 
+    //         imgUrl: 'https://vaporwavebomb.tumblr.com/image/623062623236308992', 
+    //         runTime: 6.04, 
+    //         mature: false 
+    //     }
+    // }
     
     
     
