@@ -1,5 +1,5 @@
-const Video = require('../models/video') 
-const mongoose = require('mongoose'); 
+// const Video = require('../models/video') 
+// const mongoose = require('mongoose'); 
 
 // export const seedVideo = () => {
 

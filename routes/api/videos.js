@@ -3,10 +3,9 @@ const router = express.Router();
 const mongoose = require('mongoose'); 
 const Video = require('../../models/Video');
 // const video = require('../../seed/videoSeed')
-const videoArr = require('../../seed/videoSeed')
 
 router.get('/', ( req, res ) => {
-    videoArr.find()
+    Video.find()
         .then(video => res.json({video}))
 }); 
 
