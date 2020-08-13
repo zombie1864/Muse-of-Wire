@@ -16,13 +16,13 @@ class NavBar extends React.Component {
   getLinks() {
     if (this.props.loggedIn) {
 
-      if (this.props.currentUser.status === "artist") {
+      if (this.props.currentUser.status === "performer") {
         return (
           <div className="nav-link-container">
             {/* this may need to be a protected route */}
             <Link className="nav-link" to={"/create"}>Create</Link>
 
-            <Link className="nav-link" to={"/creators"}>Creators</Link>
+            <Link className="nav-link" to={"/creators"}>Creators Index</Link>
             <Link className="nav-link" to={"/creations"}>Creations</Link>
             <Link className="nav-link" to={"/search"}>Search</Link>
             <button onClick={this.logoutUser}>Logout</button>
@@ -32,7 +32,7 @@ class NavBar extends React.Component {
      else if (this.props.currentUser.status === "student") {
         return (
           <div>
-            <Link className="nav-link" to={"/student/creators"}>Creators</Link>
+            <Link className="nav-link" to={"/student/creators"}>Creators Index</Link>
             <Link className="nav-link" to={"/student/creations"}>Creations</Link>
             <Link className="nav-link" to={"/student/search"}>Search</Link>
             <button onClick={this.logoutUser}>Logout</button>
@@ -43,7 +43,7 @@ class NavBar extends React.Component {
         return (
           <div>
             <Link className="nav-link" to={"/creators"}>
-              Creators
+              Creators Index
             </Link>
             <Link className="nav-link" to={"/creations"}>
               Creations

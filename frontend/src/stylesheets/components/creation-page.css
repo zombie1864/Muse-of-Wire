@@ -1,0 +1,58 @@
+.video-title {
+    font-size: 20px;
+}
+
+.outter {
+    display: inline-block;
+}
+.video-container {
+    width: 90%; 
+    padding: 10px; 
+    background-color: blue;
+    margin: 100px auto;
+    display: inline;
+    justify-content: center;
+}
+
+.video-slider {
+    border: 1px solid red;
+}
+
+.react-player {
+    margin: 0px 10px; 
+    transition: 1s;
+    /* display: block; */
+    float:left; 
+}
+
+.react-player:hover {
+    transform: scale(1.6);
+}
+
+.eastern-art {
+    width: 15%;
+    height: 45%;
+}
+.zodiac-art {
+    width: 15%;
+    height: 45%;
+}
+
+.abstract-art {
+    width: 15%;
+    height: 45%;
+ 
+}
+
+.colonial-art {
+    width: 15%;
+    height: 45%;
+ 
+}
+
+.cyber-art {
+    width: 15%;
+    height: 45%;
+ 
+}
+

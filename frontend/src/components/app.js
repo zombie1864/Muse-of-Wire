@@ -9,14 +9,19 @@ import "../stylesheets/application.scss"
 // import ShowVideoContainer from './videos/show_video_container'; 
 // import IndexVideoContainer from './videos/video_index_container'; 
 import MainHomePageContainer from './main/main_home_page_container';
-import CreatorPage from './creators/creators_page'
+import '../components/creations/scripts'
+import CreatorPage from './creators/creators_page'; 
+import CreationsPage from './creations/creations_page'
+import StudentsCreationsPage from './creations/students_creations_page'
 
 const App = () => (
   <div className="application-wrapper">
     <NavBarContainer />
  
     {/* < Route path = '/api/videos/:id' component={ShowVideoContainer}/> */}
-    <Route exact path = '/creators' component = {CreatorPage} />
+    <Route exact path = '/creators' component = {CreatorPage} />    
+    <Route exact path = '/creations' component = {CreationsPage} />    
+    <Route exact path = '/student/creations' component = {StudentsCreationsPage} />
     <AuthRoute exact path="/" component={MainSplashPage} />
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
