@@ -10,12 +10,12 @@ nav {
   font-size: 36px;
 }
 
-  .navigation-wrapper {
-    position: static;
-  }
+  // .navigation-wrapper {
+  //   position: fixed;
+  // }
 
 .navigation-container {
-    position: fixed;
+    // position: fixed;
     top: 0px;
     display: flex;
     flex-direction: column;
