@@ -13,8 +13,8 @@ module.exports = function validateSignupInput(data) {
     errors.status = "Status field is required";
   }
 
-  if (!Validator.isIn(data.status, ["student", "performer"])) {
-    errors.status = "Please select 'student' or 'performer' ";
+  if (!Validator.isIn(data.status, ["student", "performer", "member"])) {
+    errors.status = "Please select 'student', 'performer', 'member' ";
   }
 
   if (Validator.isEmpty(data.email)) {
