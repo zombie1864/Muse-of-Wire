@@ -84,9 +84,25 @@ class LoginForm extends React.Component {
         <div className="demo-button-container">
           <button className="demo-button"
             onClick={() => {
-              this.props.demoLogin(this.props.demoUser);
+              this.props.demoLogin(this.props.demoStudent);
             }}>
-            Demo Sign In
+            Student Demo Sign In
+          </button>
+        </div>
+        <div className="demo-button-container">
+          <button className="demo-button"
+            onClick={() => {
+              this.props.demoLogin(this.props.demoPerformer);
+            }}>
+            Performer Demo Sign In
+          </button>
+        </div>
+        <div className="demo-button-container">
+          <button className="demo-button"
+            onClick={() => {
+              this.props.demoLogin(this.props.demoMember);
+            }}>
+            Member Demo Sign In
           </button>
         </div>
         <img
