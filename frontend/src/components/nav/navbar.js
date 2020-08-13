@@ -73,9 +73,11 @@ class NavBar extends React.Component {
                 Search
               </Link>
             </div>
+            <div className="session-links-container">
               <div className="session-logout-button">
                 <button onClick={this.logoutUser}>Logout</button>
               </div>
+            </div>
           </div>
         );
       }
