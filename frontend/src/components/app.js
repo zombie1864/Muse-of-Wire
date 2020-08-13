@@ -9,12 +9,14 @@ import "../stylesheets/application.scss"
 // import ShowVideoContainer from './videos/show_video_container'; 
 // import IndexVideoContainer from './videos/video_index_container'; 
 import MainHomePageContainer from './main/main_home_page_container';
+import CreatorPageContainer from './creators/creators_page_container';
 
 const App = () => (
   <div className="application-wrapper">
     <NavBarContainer />
  
     {/* < Route path = '/api/videos/:id' component={ShowVideoContainer}/> */}
+    {/* <AuthRoute  */}
     <AuthRoute exact path="/" component={MainSplashPage} />
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
