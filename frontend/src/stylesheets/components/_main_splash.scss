@@ -39,6 +39,10 @@ main {
   width: 33vw;
 }
 
+  .splash-image:hover {
+    width: 34vw;
+  }
+
 .splash-video-container {
   position: absolute;
   width: 40vw;
@@ -53,8 +57,9 @@ main {
 
 
 
-.react-player {
-
+.splash-video-container:hover {
+  width: 41vw;
+  height: 23vw;
 }
 
 
