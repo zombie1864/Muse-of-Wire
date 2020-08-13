@@ -65,11 +65,8 @@ class SignupForm extends React.Component {
           <div className="body-inner-container-center-and-sidebar">
             <div className="body-center-container">
               <div className="signup-container">
-                <form
-                  className="session-form signup"
-                  onSubmit={this.handleSubmit}
-                >
-                  <div>
+                <form onSubmit={this.handleSubmit}>
+                  <div className="session-form signup">
                     <input
                       className="session-form-input-field"
                       type="text"
@@ -78,7 +75,7 @@ class SignupForm extends React.Component {
                       placeholder="Email"
                     />
                     <div>
-                      <label>
+                      <label className="radio-button-container">
                         <input
                           type="radio"
                           className="session-form-radio-selector"
@@ -87,11 +84,12 @@ class SignupForm extends React.Component {
                           checked={this.state.selectedStatus === "performer"}
                           onChange={this.update("selectedStatus")}
                         />
+                        <span className="radio-button-selector-disc"></span>
                         Performer
                       </label>
                     </div>
                     <div>
-                      <label>
+                      <label className="radio-button-container">
                         <input
                           type="radio"
                           className="session-form-radio-selector"
@@ -100,11 +98,12 @@ class SignupForm extends React.Component {
                           checked={this.state.selectedStatus === "student"}
                           onChange={this.update("selectedStatus")}
                         />
+                        <span className="radio-button-selector-disc"></span>
                         Student
                       </label>
                     </div>
                     <div>
-                      <label>
+                      <label className="radio-button-container">
                         <input
                           type="radio"
                           className="session-form-radio-selector"
@@ -113,6 +112,7 @@ class SignupForm extends React.Component {
                           checked={this.state.selectedStatus === "member"}
                           onChange={this.update("selectedStatus")}
                         />
+                        <span className="radio-button-selector-disc"></span>
                         Member
                       </label>
                     </div>
@@ -130,39 +130,45 @@ class SignupForm extends React.Component {
                       onChange={this.update("password2")}
                       placeholder="Confirm Password"
                     />
-                    <input type="submit" value="Submit" />
+                    <input
+                      className="signup-submit-button"
+                      type="submit"
+                      value="Submit"
+                    />
                     {this.renderErrors()}
                   </div>
                 </form>
-                <div className="demo-button-container">
-                  <button
-                    className="demo-button"
-                    onClick={() => {
-                      this.props.demoLogin(this.props.demoStudent);
-                    }}
-                  >
-                    Student Demo Sign In
-                  </button>
-                </div>
-                <div className="demo-button-container">
-                  <button
-                    className="demo-button"
-                    onClick={() => {
-                      this.props.demoLogin(this.props.demoPerformer);
-                    }}
-                  >
-                    Performer Demo Sign In
-                  </button>
-                </div>
-                <div className="demo-button-container">
-                  <button
-                    className="demo-button"
-                    onClick={() => {
-                      this.props.demoLogin(this.props.demoMember);
-                    }}
-                  >
-                    Member Demo Sign In
-                  </button>
+                <div className="demo-user-buttons-container">
+                  <div className="demo-button-container">
+                    <button
+                      className="demo-button"
+                      onClick={() => {
+                        this.props.demoLogin(this.props.demoStudent);
+                      }}
+                    >
+                      Student Demo Sign In
+                    </button>
+                  </div>
+                  <div className="demo-button-container">
+                    <button
+                      className="demo-button"
+                      onClick={() => {
+                        this.props.demoLogin(this.props.demoPerformer);
+                      }}
+                    >
+                      Performer Demo Sign In
+                    </button>
+                  </div>
+                  <div className="demo-button-container">
+                    <button
+                      className="demo-button"
+                      onClick={() => {
+                        this.props.demoLogin(this.props.demoMember);
+                      }}
+                    >
+                      Member Demo Sign In
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
