@@ -16,7 +16,7 @@ const App = () => (
     <NavBarContainer />
  
     {/* < Route path = '/api/videos/:id' component={ShowVideoContainer}/> */}
-    <Route exact path = '/creators' component = {CreatorPage} />
+    <ProtectedRoute exact path = '/creators' component = {CreatorPage} />
     <AuthRoute exact path="/" component={MainSplashPage} />
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
