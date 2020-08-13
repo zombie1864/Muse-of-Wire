@@ -31,6 +31,51 @@ class MainHomePage extends React.Component {
             height="460px"
           />
         </div>
+        <div>
+          <img
+            src="https://mixkit.imgix.net/art/preview/mixkit-small-car-parked-in-front-of-a-building-with-a-364-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=qyKXw24JX5g"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://mixkit.imgix.net/art/preview/mixkit-cat-using-chopsticks-to-eat-a-bowl-of-ramen-240-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=D3UW218_zPo"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://image.freepik.com/free-photo/venice-canal-with-tourist-gondola_49537-57.jpg"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=HOlTsQgoji4"
+            width="720px"
+            height="460px"
+          />
+        </div>
       </div>
     );
   }
@@ -45,7 +90,7 @@ class MainHomePage extends React.Component {
         </p>
         <div>
           <img
-            src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80"
+            src="https://i.pinimg.com/originals/e8/66/c6/e866c6b5db3cd3bc9ac19532e8ad58f0.jpg"
             width="630"
             height="420"
           />
@@ -54,6 +99,51 @@ class MainHomePage extends React.Component {
           <ReactPlayer
             className="react-player"
             url="https://www.youtube.com/watch?v=0krINr-smMM"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=nk0WgXgBHbY"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=f504Kx2XG-I"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=XpKlYeveS3Q"
             width="720px"
             height="460px"
           />
@@ -72,7 +162,7 @@ class MainHomePage extends React.Component {
         </p>
         <div>
           <img
-            src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80"
+            src="https://i.pinimg.com/originals/e8/66/c6/e866c6b5db3cd3bc9ac19532e8ad58f0.jpg"
             width="630"
             height="420"
           />
@@ -96,6 +186,36 @@ class MainHomePage extends React.Component {
           <ReactPlayer
             className="react-player"
             url="https://www.youtube.com/watch?v=V-_GUXIBUiQ"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=nk0WgXgBHbY"
+            width="720px"
+            height="460px"
+          />
+        </div>
+        <div>
+          <img
+            src="https://mixkit.imgix.net/art/preview/mixkit-small-car-parked-in-front-of-a-building-with-a-364-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2"
+            width="630"
+            height="420"
+          />
+        </div>
+        <div>
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=qyKXw24JX5g"
             width="720px"
             height="460px"
           />
