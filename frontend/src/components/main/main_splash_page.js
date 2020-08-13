@@ -6,7 +6,7 @@ class MainSplashPage extends React.Component {
   render() {
     return (
       <main>
-        <div className="splash-body-container">
+        <div className="body-container splash-background-image">
           <div className="splash-muse-of-wire-logo-container">
             <img
               className="muse-of-wire-logo" 
