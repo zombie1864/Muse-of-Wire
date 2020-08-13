@@ -1,9 +1,60 @@
 nav {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  max-width: 230px;
   min-width: 230px;
-  width: 20%;
-  height: 100vh;
   background-color: #e80037;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 36px;
+}
 
+  .navigation-wrapper {
+    position: static;
+  }
+
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+  }
+
+.m-w-logo-container {
+  padding: 20px;
+}
+
+.session-link,
+.nav-link {
+  text-align: center;
+  padding: 5px;
+}
+
+  .session-link:hover {
+    color: #fde101;
+  }
+
+  .session-link:active {
+    color: #000000;
+  }
+
+  .login {
+    margin-bottom: 40px;
+  }
+
+.session-text {
+  text-align: center;
+  font-size: 18px;
 }

@@ -53,6 +53,7 @@ class LoginForm extends React.Component {
   render() {
     return (
       <form className="session-form login" onSubmit={this.handleSubmit}>
+        {/*  */}
         <div>
           <input
             className="session-form-input-field"
