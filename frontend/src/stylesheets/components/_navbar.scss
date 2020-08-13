@@ -33,7 +33,34 @@ nav {
   }
 
 .m-w-logo-container {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
   padding: 20px;
+  width: 230px;
+  height: 128px;
+}
+
+.m-w-logo-image,
+.m-w-logo-image-hover {
+  width: 190px;
+  height: 88px;
+}
+
+.m-w-logo-image-hover {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+}
+
+.m-w-logo-container:hover .m-w-logo-image-hover {
+  display: inline;
+}
+
+.m-w-logo-container:active .m-w-logo-image-hover {
+  filter: grayscale(100%);;
 }
 
 .session-link,
