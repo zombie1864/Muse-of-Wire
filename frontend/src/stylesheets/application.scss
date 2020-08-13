@@ -1,0 +1,27 @@
+/*
+ * This is a manifest file that'll be compiled into application.css,
+ * which will include all the files listed below.
+ *
+ * Any CSS and SCSS file within this directory, 
+ * frontend/src/stylesheets/
+ * can be referenced here using a relative path.
+ *
+ * Application-wide styles added to this file will appear at the
+ * bottom of the compiled file. Styles here take precedence over
+ * styles defined in any other CSS/SCSS file in this directory. 
+ * Styles in this file should be added after the last require_*
+ * statement. Creating a new file per style scope is preferred.
+ *
+ *= require_self
+ */
+
+ @import "base/reset";
+ @import "base/app_layout";
+ @import "components/navbar";
+ @import "components/main_splash";
+
+// google drive m-o-w images folder url: https://drive.google.com/drive/folders/1mE_hnQ-bgRai55Uie_nELSLbUPwKbit7?usp=sharing
+
+// images: https://drive.google.com/drive/folders/1IfzsC7BhDFz1k44QhxHTTLrjq73dzZvF?usp=sharing
+
+// views: https://drive.google.com/drive/folders/1fivuzAQBrMLojuc8heNgMcMdSTnJy-H1?usp=sharing

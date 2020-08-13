@@ -1,0 +1,73 @@
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.splash-muse-of-wire-logo-container {
+  position: absolute;
+  left: 30%;
+  top: 3%;
+}
+
+.muse-of-wire-logo {
+  width: 50vw;
+}
+
+.splash-image-container {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.splash-image {
+  width: 33vw;
+  transition-duration: .4s;
+  transition-timing-function: ease-in
+}
+
+  .splash-image:hover {
+    width: 34vw;
+    transition-duration: .4s;
+    transition-timing-function: ease-in;
+  }
+
+.splash-video-container {
+  position: absolute;
+  width: 40vw;
+  height: 22.5vw;
+  bottom: 15%;
+  right: 5%;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transition-duration: .4s;
+  transition-timing-function: ease-in;
+}
+
+
+
+.splash-video-container:hover {
+  width: 41vw;
+  height: 23vw;
+  transition-duration: .4s;
+  transition-timing-function: ease-in;
+}
+
+

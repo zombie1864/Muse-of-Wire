@@ -18,13 +18,13 @@ class NavBar extends React.Component {
 
       if (this.props.currentUser.status === "artist") {
         return (
-          <div>
+          <div className="nav-link-container">
             {/* this may need to be a protected route */}
-            <Link to={"/create"}>Create</Link>
+            <Link className="nav-link" to={"/create"}>Create</Link>
 
-            <Link to={"/creators"}>Creators</Link>
-            <Link to={"/creations"}>Creations</Link>
-            <Link to={"/search"}>Search</Link>
+            <Link className="nav-link" to={"/creators"}>Creators</Link>
+            <Link className="nav-link" to={"/creations"}>Creations</Link>
+            <Link className="nav-link" to={"/search"}>Search</Link>
             <button onClick={this.logoutUser}>Logout</button>
           </div>
         );
@@ -32,9 +32,9 @@ class NavBar extends React.Component {
      else if (this.props.currentUser.status === "student") {
         return (
           <div>
-            <Link to={"/student/creators"}>Creators</Link>
-            <Link to={"/student/creations"}>Creations</Link>
-            <Link to={"/student/search"}>Search</Link>
+            <Link className="nav-link" to={"/student/creators"}>Creators</Link>
+            <Link className="nav-link" to={"/student/creations"}>Creations</Link>
+            <Link className="nav-link" to={"/student/search"}>Search</Link>
             <button onClick={this.logoutUser}>Logout</button>
           </div>
         );
@@ -42,9 +42,15 @@ class NavBar extends React.Component {
       else {
         return (
           <div>
-            <Link to={"/creators"}>Creators</Link>
-            <Link to={"/creations"}>Creations</Link>
-            <Link to={"/search"}>Search</Link>
+            <Link className="nav-link" to={"/creators"}>
+              Creators
+            </Link>
+            <Link className="nav-link" to={"/creations"}>
+              Creations
+            </Link>
+            <Link className="nav-link" to={"/search"}>
+              Search
+            </Link>
             <button onClick={this.logoutUser}>Logout</button>
           </div>
         );
@@ -53,8 +59,13 @@ class NavBar extends React.Component {
     } else {
       return (
         <div>
-          <Link to={"/signup"}>Signup</Link>
-          <Link to={"/login"}>Login</Link>
+          <div className="session-link signup">
+            <Link to={"/signup"}>Signup</Link>
+          </div>
+          <div className="session-text">or</div>
+          <div className="session-link login">
+            <Link to={"/login"}>Login</Link>
+          </div>
         </div>
       );
     }
@@ -62,9 +73,25 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
-        {this.getLinks()}
-      </div>
+      <nav>
+        <div className="navigation-wrapper">
+          <div className="navigation-container">
+            <Link to={"/"}>
+              <div className="m-w-logo-container">
+                <img
+                  src="https://lh3.google.com/u/0/d/1CeO7JEqkDVQpUzyxAlTcquAc059ERD_j=w1616-h1808-iv1"
+                  className="m-w-logo-image"
+                />
+                <img 
+                  src="https://lh3.google.com/u/0/d/10xrgro8JEo5VD24pYRHf2xuA5zLDqDMM=w3564-h1808-iv1"
+                  className="m-w-logo-image-hover" 
+                />
+              </div>
+            </Link>
+            {this.getLinks()}
+          </div>
+        </div>
+      </nav>
     );
   }
 }

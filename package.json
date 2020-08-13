@@ -32,6 +32,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.28",
     "mongoose-data-seed": "^2.1.6",
+    "node-sass": "^4.14.1",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "react-player": "^2.6.0",

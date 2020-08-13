@@ -1,0 +1,87 @@
+nav {
+  position: relative;
+  display: flex;
+  max-width: 230px;
+  min-width: 230px;
+  background-color: #e80037;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+  .navigation-wrapper {
+    position: static;
+  }
+
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+  }
+
+.m-w-logo-container {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 230px;
+  height: 128px;
+}
+
+.m-w-logo-image,
+.m-w-logo-image-hover {
+  width: 190px;
+  height: 88px;
+}
+
+.m-w-logo-image-hover {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+}
+
+.m-w-logo-container:hover .m-w-logo-image-hover {
+  display: inline;
+}
+
+.m-w-logo-container:active .m-w-logo-image-hover {
+  filter: grayscale(100%);;
+}
+
+.session-link,
+.nav-link {
+  text-align: center;
+  padding: 5px;
+}
+
+  .session-link:hover {
+    color: #fde101;
+  }
+
+  .session-link:active {
+    color: #000000;
+  }
+
+  .login {
+    margin-bottom: 40px;
+  }
+
+.session-text {
+  text-align: center;
+  font-size: 18px;
+}
