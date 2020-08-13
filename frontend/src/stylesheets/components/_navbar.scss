@@ -1,6 +1,6 @@
 nav {
   position: relative;
-  display: flex;
+  display: block;
   max-width: 230px;
   min-width: 230px;
   background-color: #e80037;
@@ -65,9 +65,19 @@ nav {
   filter: grayscale(100%);;
 }
 
-.session-links-container {
-  margin: 20px 0px;
+.authenticated-user-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+}
 
+.session-links-container {
+  margin: 20px 0px 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .session-link,
@@ -76,17 +86,19 @@ nav {
   padding: 5px;
 }
 
-  .session-link:hover {
+  .session-link:hover,
+  .nav-link:hover {
     color: #fde101;
   }
 
-  .session-link:active {
+  .session-link:active,
+  .nav-link:active {
     color: #000000;
   }
 
-  .login {
-    margin-bottom: 40px;
-  }
+  // .login {
+  //   margin-bottom: 40px;
+  // }
 
 .session-text {
   text-align: center;
@@ -97,13 +109,13 @@ nav {
   color: #e80037;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
   border: none;
   outline: none;
-  padding: 9px 18px;
+  padding: 6px 18px;
   border-radius: 3px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .session-logout-button button:hover {
