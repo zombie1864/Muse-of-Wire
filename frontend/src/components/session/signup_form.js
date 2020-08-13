@@ -64,9 +64,9 @@ class SignupForm extends React.Component {
         <div className="body-container signup-background-image">
           <div className="body-inner-container-center-and-sidebar">
             <div className="body-center-container">
-              <div className="signup-container">
+              <div className="session-container signup-session">
                 <form onSubmit={this.handleSubmit}>
-                  <div className="session-form signup">
+                  <div className="session-form">
                     <input
                       className="session-form-input-field"
                       type="text"
@@ -131,7 +131,7 @@ class SignupForm extends React.Component {
                       placeholder="Confirm Password"
                     />
                     <input
-                      className="signup-submit-button"
+                      className="session-submit-button"
                       type="submit"
                       value="Submit"
                     />
@@ -175,19 +175,19 @@ class SignupForm extends React.Component {
             <div className="sidebar-container">
               <div className="sidebar-image">
                 <img
-                  className="signup-form-image"
+                  className="session-form-image"
                   src="https://lh3.googleusercontent.com/QNWyV9Cw46FbYCsjY31_iAjWzZn9zRKhXBAqN6q4RmpwYSwl0D2Nvt1-4lBwYbrPGbNCI6Vg3IIXiauLc90Ltm_g1-tLur-dQScjxC3ypERlI7xxmF4ydpsMTT6US14lWiq7UBKbk7gcyh0wUUodP63Y7uDJimMGnEdPh9pSsivYoyRs7FylqqeEianpZVVFRRAM4Azkub93NDlYMvp9kKaTVnklnwuCrRVoCdSH4wQjzMUviq4zM1kKpnoOjM6Vbf_X43CAHE7M7o17o3gLZX4qZ6H6bxRXDRYUpGCfZG1vuX_VQYAq_xADxSSKBBLiwLtL-ZltyJUfGBVBDfY1ql1iGmF_K-RbQj1Gp49x9pHCsURSlMCjcWYzYNX00Cs-5vhQVX0qu8mTAeIH-ruhVDOfq85kpHHuzHSApaJlsBTjDnLv_dWVu0O0l_XULwKWyN6fU5L1usTwM-Mjowzub8N_kPfPcPTD92bdafYOIpi0yqfZIIp6vgZvTDLB_U_MsrDWY5llzuLMANxctBD3dwSZAJWhS-m_iXkoFhCcw5IkO_4z4BYCUexj4te6T-b2DHiWL1X66PaJPxri11scXYblL6fHklH8G58B6YatCANjWYv0zBAK3DNmh92VLwwXMA7tHPOGu_bjW7fhvaAKb3lzt-Bd9AXwC8cVJF0zsAnXQuEOrfoa9DmzqVQdgJfdC66S2w=w1834-h1776-ft"
                 />
               </div>
               <div className="sidebar-image">
                 <img
-                  className="signup-form-image"
+                  className="session-form-image"
                   src="https://lh3.googleusercontent.com/TLrRGw-BJoYdUPuH9i02L9GU8xS4L8bQ90d4ECU5zG86hMAb9pqL6Jd3LUMGQgfqN6lQK3tLdMzBfGBHaVm0JjZkGCiIqf8FmEcKByl6UOhNzxOz-lR_hwMk7mgEWFX9qVsOGIY6TVkqRBX8HstwU-aAZrBok3ofrEBynknofxGfUMXHERu67FsMkoIG0P6CHnXMYWdTcN6bRKkoFEGFKXhlguztRPqjWYE0aUcHj81NJ0XULX6B_CH6QjB8e1bZu7UV-Qtpi_btw_T4SzVP-SCoHHw8NwVxvorQ4JMqIOltUAvClLeQe3K7QpDkzCuyuxttU2jnciaIhiedp88vEaiOVdsPzbLDXdI49gvzjt4HTBjjxGqF7UkdU4YTFuM1pMhXpCbwFbDsNIZ2FYCKp1t_X5fEcWlc9EZ89ZtcwGdaI0mFQvMCgw2lXFdWtp3SfibR3okrMNX6F7R4h1Vk1tiygjErcYR4Lt8uWG6AvZkTWQ6YTC6WhhD80gex082txjOu7MkRZ4ZsVORnMyQgRkyImFItvh5-KAtpBqC4Wvm3Vlv5ROyq4KxDwRLhLdAgxzBrtY6gnLsU7uwxTSp3PedAzbXPVzNv-_q1-2rO_Y08AJBm8ukDSbP5Z805nL9-lCH9taBISm14C4AoIS-nQqXACWIe8va2o7d1LNXei2yg7qV_I_i4dzaYRJ5O2tCgisUbJA=w1834-h1776-ft"
                 />
               </div>
               <div className="sidebar-image">
                 <img
-                  className="signup-form-image"
+                  className="session-form-image"
                   src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
                 />
               </div>
