@@ -1,3 +1,11 @@
+body {
+  display: block;
+  position: relative;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
 @keyframes backgroundScroll {
   from {background-position: 1800px 0px;}
   to {background-position: 0px 0px;}
@@ -8,7 +16,13 @@
   to {background-position: 0px 0px;}
 }
 
-body {
+.application-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.body-container{
   display: block;
   position: relative;
   margin: 0px;
@@ -25,8 +39,4 @@ body {
   animation-timing-function: ease-in;
 }
 
-.application-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+
