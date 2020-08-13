@@ -52,7 +52,6 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div>
         <form className="session-form login" onSubmit={this.handleSubmit}>
           <div>
@@ -86,37 +85,6 @@ class LoginForm extends React.Component {
         <img src='https://lh3.google.com/u/0/d/1AWNT1KaKvkVcHsVTPpuqIgF9m5UZICBZ=w3078-h1564-iv1' width='630' height='420' />
         <img src='https://lh3.google.com/u/0/d/1vXsJHmfv-kPQWh0XRA1QXz5IjygNRYiY=w3078-h1564-iv1' width='630' height='420' />
       </div>
-=======
-      <form className="session-form login" onSubmit={this.handleSubmit}>
-        {/*  */}
-        <div>
-          <input
-            className="session-form-input-field"
-            type="text"
-            value={this.state.email}
-            onChange={this.update("email")}
-            placeholder="Email"
-          />
-        </div>
-        <div>
-          <input
-            className="session-form-input-field"
-            type="password"
-            value={this.state.password}
-            onChange={this.update("password")}
-            placeholder="Password"
-          />
-        </div>
-        <div>
-          <input
-            className="session-form-submit-button"
-            type="submit"
-            value="Submit"
-          />
-        </div>
-        {this.renderErrors()}
-      </form>
->>>>>>> 0f3d65190b05e764c24c81ef0002563b354425cf
     );
   }
 }

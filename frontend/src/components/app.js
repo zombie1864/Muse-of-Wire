@@ -8,6 +8,7 @@ import SignupFormContainer from "./session/signup_form_container";
 import "../stylesheets/application.scss"
 // import ShowVideoContainer from './videos/show_video_container'; 
 // import IndexVideoContainer from './videos/video_index_container'; 
+import MainHomePageContainer from './main/main_home_page_container';
 
 const App = () => (
   <div className="application-wrapper">
