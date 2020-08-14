@@ -1,0 +1,78 @@
+.body-container.creators-background-image {
+  background-image: url("https://lh3.googleusercontent.com/GLjBKZdnbp4CAVLxFCkKPSuwFcuj2u78B8h0deQBpJZ8SVXk6Q0bnFZ2LiwCdgT7JwFX9LAq3pApcfP4dxRM24dr4bzED4U_rALslmlMwGzgx7Nbh9Jl9vTPZkLPASL1l7xLXRin25dLgo_CbYLKI7L1Hdbg5bN7a-4DuoqUCZ0TqLGL1JvKmwiQNI7ceoIP43nKJH6YX7-bOETb_lp0HzDoPw4pR8gRYKP7v7fIO8yHIvk9D-4jvRIgKmRQphRw0uvtJHEd0diJQMLH8kOBhwfvJDJHza4OcbtgnNWAQ9xjXrGGhenLSuP7o_nKfvDAPbEF5AUjbzXumWZdoGZfkW5Fch76EYDB0x8ivdOxZ7dwSV_Eur3LfGkWTyqwviHaeI_S6vMhQL2XJAjWXHkcCai3HsGQUFPqdjxuubFuISolX68Y32_FQ6JDB7yo9kOrj7rjBrNrwf8f54fgPND6FAY8_GDQo6-HoIV7VEuBPhudvEMXVP_lJPtSOqPd_Q-PuNZjNa8SERWm8rV0F8c7Db5XnN0ponf1liTOimz-GYOvy_Zeu7tIlKyXVjZBb7cUIKRbEpklsLtYMLYUPwnKuECGEnW4OGIxKjZ9kjDxlnQtar1YwzE8zwWVLmJhPFZt1gAn7mCH0bLXx5KaAKIae0vOmexHHSDhWNbKXCq5sAgeLIGaIchUC6uxMN9asd0HY_gfFw=w3232-h1808-ft");
+}
+
+.creator-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.creator-profile-box {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(#ffffff, 0.8);
+  color: #222222;
+  height: 180px;
+  padding: 0px;
+  margin: 5px 0px;
+}
+
+.creater-profile-image {
+  height: 180px;
+  width: 180px;
+}
+
+img {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  }
+
+.creator-name-and-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+  height: 100%;
+  width: 200px;
+}
+
+.creator-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.creator-location {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e80027;
+}
+
+.creator-description {
+  display: inline-block;
+  margin: 5px;
+  height: 170px;
+  width: 40%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.creator-work-thumbnail {
+  height: 180px;
+  width: auto;
+}
+
+.creator-video {
+  height: 180px;
+  width: auto;
+}
