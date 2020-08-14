@@ -6,45 +6,6 @@ class CreationsPage extends React.Component {
         return (
             <div>
                 <p className = 'video-title'>Video Gallery</p>
-            <div className = 'outter'>
-
-                <div className = 'video-container'>
-                    <ReactPlayer
-                        className="react-player"
-                        url="https://www.youtube.com/watch?v=EmMTKdUAokM"
-                        width="500px"
-                        height="240px"
-                    />
-                    
-                    <ReactPlayer
-                        className="react-player"
-                        url="https://www.youtube.com/watch?v=PT14o5Wq7gE"
-                        width="500px"
-                        height="240px"
-                    />
-                        
-                    <ReactPlayer
-                        className="react-player"
-                        url="https://www.youtube.com/watch?v=eVahCryUXw0"
-                        width="500px"
-                        height="240px"
-                    />                    
-                        
-                    <ReactPlayer
-                        className="react-player"
-                        url="https://www.youtube.com/watch?v=gotEdEs0FC0"
-                        width="500px"
-                        height="240px"
-                    />                    
-                        
-                    <ReactPlayer
-                        className="react-player"
-                        url="https://www.youtube.com/watch?v=0ymt_xfTn-8"
-                        width="500px"
-                        height="240px"
-                    />
-            </div>
-                </div>
                 <br></br>
                 <p> Art Gallery</p>
                 <img src='https://freeclassicimages.com/images/asian-art-japanese-art-0525.jpg' className = 'eastern-art'></img>

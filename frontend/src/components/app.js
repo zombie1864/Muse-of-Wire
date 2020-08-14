@@ -9,7 +9,6 @@ import "../stylesheets/application.scss"
 // import ShowVideoContainer from './videos/show_video_container'; 
 // import IndexVideoContainer from './videos/video_index_container'; 
 import MainHomePageContainer from './main/main_home_page_container';
-import '../components/creations/scripts'
 import CreatorPage from './creators/creators_page'; 
 import CreationsPage from './creations/creations_page'
 import StudentsCreationsPage from './creations/students_creations_page'
