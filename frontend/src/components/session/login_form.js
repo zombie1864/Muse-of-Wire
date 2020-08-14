@@ -50,7 +50,6 @@ class LoginForm extends React.Component {
     }
   }
   componentWillReceiveProps(nextProps) {
-    debugger
     if (nextProps.currentUser === true) {
       this.props.history.push("/");
     }
@@ -59,7 +58,6 @@ class LoginForm extends React.Component {
 
   update(field) {
     return (e) => {
-      debugger
      if (this.props.errors) this.props.clearErrors();
       this.setState({
         [field]: e.currentTarget.value,
