@@ -19,8 +19,8 @@ const App = () => (
  
     {/* < Route path = '/api/videos/:id' component={ShowVideoContainer}/> */}
     <ProtectedRoute exact path = '/creators' component = {CreatorPage} /> 
-    <Route exact path = '/creations' component = {CreationsPage} />    
-    <Route exact path = '/student/creations' component = {StudentsCreationsPage} />
+    <ProtectedRoute exact path = '/creations' component = {CreationsPage} />    
+    <ProtectedRoute exact path = '/student/creations' component = {StudentsCreationsPage} />
     <AuthRoute exact path="/" component={MainSplashPage} />
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
