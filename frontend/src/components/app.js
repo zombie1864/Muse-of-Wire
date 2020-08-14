@@ -12,6 +12,9 @@ import MainHomePageContainer from './main/main_home_page_container';
 import CreatorPage from './creators/creators_page'; 
 import CreationsPage from './creations/creations_page'
 import StudentsCreationsPage from './creations/students_creations_page'
+import Search from './search/search';
+import Create from './create/create';
+
 
 const App = () => (
   <div className="application-wrapper">
@@ -25,7 +28,8 @@ const App = () => (
     <AuthRoute exact path="/login" component={LoginFormContainer} />
     <AuthRoute exact path="/signup" component={SignupFormContainer} />
     <ProtectedRoute exact path="/" component={MainHomePageContainer} />
-
+    <ProtectedRoute exact path="/search" component={Search} />
+    <ProtectedRoute exact path="/create" component={Create} />
   </div>
 );
 
