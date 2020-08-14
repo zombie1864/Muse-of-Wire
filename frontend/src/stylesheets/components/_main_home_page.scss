@@ -1,0 +1,89 @@
+.welcome-container {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+    background-color: #e80037;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-left: 12%;
+}
+
+.status-feed {
+  font-weight: 700;
+  font-family: cursive;
+  font-size: 36px;
+}
+
+.welcome-email {
+  font-size: 48px;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  margin-left: 19%;
+}
+
+.welcome-status {
+  margin-top: 15px; 
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  font-size: 24px;
+  margin-left: 25%;
+}
+
+.main-home-container {
+  display: block;
+  width: 100%;
+
+}
+
+.main-home-background {
+  background-image: url("https://cdn.wallpapersafari.com/50/75/yR9Ef5.jpg");
+  position: relative;
+  display: block;
+  width: 100%;
+  margin:0;
+  background-attachment: fixed;
+  
+}
+
+.react-player:hover  {
+  overflow: visible;
+}
+
+.main-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-media-container {
+  position: relative;
+  display: block;
+  padding-top: 135px;
+  overflow: hidden;
+}
+
+.main-media-container .react-player {
+  border-radius: 0;
+  margin-left: 0;
+  align-items: center;
+  zoom: none;
+  animation: none;
+  transition: none;
+  transform: none;
+  line-height: 0;
+}
+
+.main-media-container .img {
+  object-fit: scale-down;
+}
+
+.main-media-container .img, .main-media-container .react-player {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: -webkit-center;
+}
