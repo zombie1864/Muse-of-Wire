@@ -49,7 +49,7 @@ class CreationsPage extends React.Component {
         return (
             <div>
 <div className = 'creations-page-body'>
-                <p className = 'video-title'>Video Gallery</p>
+                <p className = 'video-title'></p>
                 <div id="slider">
                     <input type="radio" name="slider" id="slide3" checked/>
                     <input type="radio" name="slider" id="slide2" checked/>

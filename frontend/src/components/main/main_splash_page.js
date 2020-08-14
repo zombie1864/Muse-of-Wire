@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
+import Footer from "../footer/footer";
 
 class MainSplashPage extends React.Component {
   render() {
@@ -30,9 +31,10 @@ class MainSplashPage extends React.Component {
                 height="100%"
               />
             </div>
+            <Footer />
           </div>
         </div>
-        <div></div>
+        {/* <div></div> */}
       </main>
     );
   }

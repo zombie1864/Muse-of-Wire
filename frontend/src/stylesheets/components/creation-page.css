@@ -1,5 +1,5 @@
 .creations-page-body {
-   background-image: url('https://www.historicartcrafttheatre.org/uploads/2/5/0/2/25024004/auditorium-3-fhiartcraft_orig.jpg');
+   background-image: url('https://lh3.googleusercontent.com/fife/ABSRlIrvQTJKhihGB5EBPImpEwx_a4_Xv8rzcAhxmoC05LtT4gaj1rnoYFdEMiRB0pCW75w2kXitIoYEAckMo9UYgPASxTAyiiM5peqkjoWBVyt2jaR1GjAT007o00j8NE0Kwm1BVvKF81dA0XPshzym-Ow6DuNoyrQ57-qClfQLmG5ucinwU1v5LvQJx7cTNasO__mOglQ4q-XBUZw6MZoqOc0PZuwrQBDnxsKGHphK2m8Y56iixU6Q8sTbjS02tXE4da8OR7TSW4nOTIsa5J6g4Kni-CobIqmfaHbg6UkBKhnFBKBmnrkKeMLj8abh5KYedJKQM9vo6M5oDQdtjP5Zgcf5py8IE31HRgPYGBDYOvHYdGK1v-5pF0A4sqaapl6WEThSZQPXAn8NK3qAOLrIwiQKCN-dED1leN9oI7OFw6DRqugtEmvnzLYB8iGG714Stf1GOiiReehs0zbON7nKDi2BUQVWOKvN8g9eJbfN3ln4Ych_KLFiQC2YvFTLhIeWlU4mniQtbClrmLNKU5k3ZvypsiJth0IP0EjSnFkFhvrf6zIuBDffdVm9rT_wBc_Go06wM_mIgsBdeJmyLEfuP8KvZfUKACLA0d7iyxRiQKPQ-l2t4NPPEH8-3AxZjVmDmdFZ6zAb7-VoBHMdPZmPoLMfKgITUrE0uBO8eUVN1R7WV0qKAKJUzWEKOgFoAhWpjRyIph_vFyu4EI7usXRtRAu9_C88BPI2rgs=w2772-h1950-ft');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
@@ -16,7 +16,9 @@
 .video-title {
     font-size: 40px;
     position: relative;
+    padding-top: 20px;
     left: 575px;
+    /* font-family: sans-serif; */
 }
 
 
