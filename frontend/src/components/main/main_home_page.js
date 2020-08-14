@@ -57,11 +57,12 @@ class MainHomePage extends React.Component {
                 <img
                   className="images"
                   src="https://images.unsplash.com/photo-1492037766660-2a56f9eb3fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                  alt='images'
                 />
               </div>
               <div id="imgModal" className="modal">
                 <span className="close">x</span>
-                <img className="modal-content" id="modal-image" />
+                <img className="modal-content" id="modal-image" alt='images'/>
               </div>
               <div>
                 <ReactPlayer
@@ -74,7 +75,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://mixkit.imgix.net/art/preview/mixkit-small-car-parked-in-front-of-a-building-with-a-364-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2"
+                  src="https://mixkit.imgix.net/art/preview/mixkit-small-car-parked-in-front-of-a-building-with-a-364-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2" alt='images'
                 />
               </div>
               <div>
@@ -91,6 +92,7 @@ class MainHomePage extends React.Component {
                   src="https://mixkit.imgix.net/art/preview/mixkit-cat-using-chopsticks-to-eat-a-bowl-of-ramen-240-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2"
                   width="630"
                   height="420"
+                  alt='images'
                 />
               </div>
               <div>
@@ -105,6 +107,7 @@ class MainHomePage extends React.Component {
                 <img
                   className="images"
                   src="https://image.freepik.com/free-photo/venice-canal-with-tourist-gondola_49537-57.jpg"
+                  alt='images'
                 />
               </div>
               <div>
@@ -132,12 +135,12 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://i.pinimg.com/originals/e8/66/c6/e866c6b5db3cd3bc9ac19532e8ad58f0.jpg"
+                  src="https://i.pinimg.com/originals/e8/66/c6/e866c6b5db3cd3bc9ac19532e8ad58f0.jpg" alt='images'
                 />
               </div>
               <div id="imgModal" className="modal">
                 <span className="close">x</span>
-                <img className="modal-content" id="modal-image" />
+                <img className="modal-content" id="modal-image"  alt='images'/>
               </div>
               <div>
                 <ReactPlayer
@@ -150,7 +153,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80"
+                  src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80" alt='images'
                 />
               </div>
               <div>
@@ -164,7 +167,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt='images'
                 />
               </div>
               <div>
@@ -178,7 +181,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt='images'
                 />
               </div>
               <div>
@@ -206,7 +209,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://i.pinimg.com/originals/e8/66/c6/e866c6b5db3cd3bc9ac19532e8ad58f0.jpg"
+                  src="https://i.pinimg.com/originals/e8/66/c6/e866c6b5db3cd3bc9ac19532e8ad58f0.jpg" alt='images'
                 />
               </div>
               <div id="imgModal" className="modal">
@@ -224,7 +227,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://images.unsplash.com/photo-1492037766660-2a56f9eb3fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+                  src="https://images.unsplash.com/photo-1492037766660-2a56f9eb3fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt='images'
                 />
               </div>
               <div>
@@ -238,7 +241,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80"
+                  src="https://images.unsplash.com/photo-1553344518-c44926bebaa7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1653&q=80" alt='images'
                 />
               </div>
               <div>
@@ -252,7 +255,7 @@ class MainHomePage extends React.Component {
               <div className="image-wrapper">
                 <img
                   className="images"
-                  src="https://mixkit.imgix.net/art/preview/mixkit-small-car-parked-in-front-of-a-building-with-a-364-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2"
+                  src="https://mixkit.imgix.net/art/preview/mixkit-small-car-parked-in-front-of-a-building-with-a-364-desktop-wallpaper-medium.png?w=390&h=219&q=80&auto=format%2Ccompress&q=50&dpr=2" alt='images'
                 />
               </div>
               <div>

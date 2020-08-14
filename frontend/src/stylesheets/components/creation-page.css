@@ -1,14 +1,31 @@
-.video-title {
-    font-size: 20px;
+.creations-page-body {
+   background-image: url('https://www.historicartcrafttheatre.org/uploads/2/5/0/2/25024004/auditorium-3-fhiartcraft_orig.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   /* height: 100%;
+   width: 100%; */
+   /* opacity: 0.8; */
 }
 
 
-.video-container .react-player {
+.art-gallery-container {
+   background-color: #dddddd;
+}
+
+.video-title {
+    font-size: 40px;
+    position: relative;
+    left: 575px;
+}
+
+
+/* .video-container .react-player {
     min-width: 150px;
     height: 100px;
     background: #ddd; 
     margin: 10px;
-}
+} */
 
 .video-slider {
     border: 1px solid red;
@@ -17,11 +34,24 @@
 .react-player {
     margin: 0px 10px; 
     transition: 1s;
+    /* opacity: 1; */
 }
 
 /* .react-player:hover {
     transform: scale(1.6);
 } */
+
+.art-gallery {
+   font-size: 40px;
+}
+
+.classical-art {
+   font-size: 20px;
+}
+
+.modern-art {
+   font-size: 20px;
+}
 
 .eastern-art, .zodiac-art, .abstract-art, .colonial-art, .cyber-art {
   border-radius: 5px;
@@ -32,9 +62,26 @@
   margin-bottom: 8px;
   display: block;
 }
-.eastern-art {
-    width: 25%;
-    height: 50%;
+
+.classical-art-container {
+   padding: 10px 0;
+   border: 3px solid green;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+}
+
+.modern-art-container {
+   padding: 10px 0;
+   border: 3px solid green;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+}
+
+#eastern-art {
+    width: 22%;
+    /* height: 10%; */
    border-style: solid;
    border-width: 30px 30px 30px 30px;
    -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
@@ -42,73 +89,107 @@
    -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
    border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
 }
-.zodiac-art {
-    width: 25%;
-    height: 50%;
+
+#zodiac-art {
+   width: 25%;
+   /* height: 30%; */
+   border-style: solid;
+   border-width: 30px 30px 30px 30px;
+   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+}
+#colonial-art {
+   width: 40%;
+    /* height: 50%; */
+    border-style: solid;
+   border-width: 30px 30px 30px 30px;
+   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+}
+
+#abstract-art {
+   width: 35%;
+    /* height: 50%; */
     border-style: solid;
     border-width: 30px 30px 30px 30px;
     -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
     -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
     -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
     border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-}
-.colonial-art {
-    width: 35%;
-    height: 50%;
-    border-style: solid;
-   border-width: 30px 30px 30px 30px;
-   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-}
-
-.abstract-art {
-    width: 35%;
-    height: 50%;
-    border-style: solid;
-   border-width: 30px 30px 30px 30px;
-   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-}
-
-
-.cyber-art {
-    width: 20%;
-    height: 50%;
-    border-style: solid;
-   border-width: 30px 30px 30px 30px;
-   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-}
-
-.nude-art {
-   width: 30%;
-   height: 50%;
-   border-style: solid;
-  border-width: 30px 30px 30px 30px;
-  -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-  -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-  -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-  border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
-}
-
-#slider {
-
-    position: relative;
-    left: 220px;
-    width: 900px;
-
- }
- #slider input[type=radio] {
-    display: none;
- }
- #slider label {
-    cursor:pointer;
+   }
+   
+   
+   #cyber-art {
+      width: 20%;
+      /* height: 50%; */
+      border-style: solid;
+      border-width: 30px 30px 30px 30px;
+      -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+      -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+      -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+      border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   }
+   
+   #nude-art {
+      width: 30%;
+      /* height: 50%; */
+      border-style: solid;
+      border-width: 30px 30px 30px 30px;
+      -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+      -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+      -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+      border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   }
+   
+   #eastern-art:hover {
+      transition: 1s;
+      transform: scale(1.1);
+   }
+   
+   #zodiac-art:hover {
+      transition: 1s;
+      transform: scale(1.1);
+   }
+   
+   #colonial-art:hover {
+      transition: 1s;
+      transform: scale(1.1);
+   }
+   
+   #abstract-art:hover {
+      transition: 1s;
+      transform: scale(1.1);
+   }
+   
+   #cyber-art:hover {
+      transition: 1s;
+      transform: scale(1.1);
+   }
+   
+   #nude-art:hover {
+      transition: 1s;
+      transform: scale(1.1);
+   }
+   
+   
+   #slider {
+      
+      position: relative;
+      left: 220px;
+      width: 900px;
+      /* opacity: 1; */
+      /* z-index: 1; */
+      
+   }
+   #slider input[type=radio] {
+      display: none;
+   }
+   #slider label {
+      cursor:pointer;
     text-decoration: none;
  }
  #slides {
