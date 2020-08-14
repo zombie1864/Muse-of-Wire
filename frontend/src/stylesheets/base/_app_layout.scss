@@ -23,6 +23,14 @@ body {
   height: 100vh;
 }
 
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
 .body-container{
   display: block;
   position: relative;
@@ -37,14 +45,6 @@ body {
   animation: backgroundScroll .7s linear 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-}
-
-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
 }
 
 
