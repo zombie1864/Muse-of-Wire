@@ -11,6 +11,8 @@ class Footer extends React.Component {
       "Matthew Greer"
     ];
   
+    // this.shuffle() = this.shuffle.bind(this);
+    // this.renderDevelopers() = this.renderDevelopers.bind(this);
   };
 
   shuffle(array) {
@@ -18,15 +20,16 @@ class Footer extends React.Component {
       let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
+    return array;
   };
 
   renderDevelopers() { 
-    const developerOrder = shuffle(this.developers)
+    let developerOrder = this.shuffle(this.developers);
     return(
       <div className="developer-names">
         {developerOrder[0]}, 
-        {developerOrder[1]}, 
-        {developerOrder[2]}
+        &nbsp;{developerOrder[1]}, 
+        &nbsp;{developerOrder[2]}
       </div>
     )
   };
@@ -39,7 +42,7 @@ class Footer extends React.Component {
           <div className="copywright">
             Copywright &copy; 2020
           </div>
-          {renderDevelopers()}
+          {this.renderDevelopers()}
           <div className="site-github-repo">
             <Link to="https://github.com/zombie1864">Github Repo</Link>
           </div>
