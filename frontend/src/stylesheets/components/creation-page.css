@@ -30,6 +30,15 @@
     /* transform: scale(1.6); */
 }
 
+.eastern-art, .zodiac-art, .abstract-art, .colonial-art, .cyber-art {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 720px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: block;
+}
 .eastern-art {
     width: 23%;
     height: 30%;
