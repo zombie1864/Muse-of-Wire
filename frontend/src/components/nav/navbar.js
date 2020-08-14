@@ -148,8 +148,10 @@ class NavBar extends React.Component {
   render() {
     return (
       <nav>
-        <div className="navigation-wrapper">
-          {this.getLinks()}
+        <div className="navigation-anchor">
+          <div className="navigation-wrapper">
+            {this.getLinks()}
+          </div>
         </div>
       </nav>
     );

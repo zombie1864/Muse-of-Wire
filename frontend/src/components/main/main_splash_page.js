@@ -24,7 +24,7 @@ class MainSplashPage extends React.Component {
             </div>
             <div className="splash-video-container">
               <ReactPlayer
-                className="react-player"
+                className="splash-page-video"
                 url="https://www.youtube.com/watch?v=2LNiJK3rK9s"
                 width="100%"
                 height="100%"
