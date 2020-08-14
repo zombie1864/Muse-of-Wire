@@ -31,30 +31,57 @@
 }
 
 .eastern-art {
-    width: 15%;
-    height: 45%;
+    width: 23%;
+    height: 30%;
+   border-style: solid;
+   border-width: 30px 30px 30px 30px;
+   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
 }
 .zodiac-art {
-    width: 15%;
-    height: 45%;
+    width: 23%;
+    height: 30%;
+    border-style: solid;
+    border-width: 30px 30px 30px 30px;
+    -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+    -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+    -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+    border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
 }
 
 .abstract-art {
-    width: 15%;
-    height: 45%;
- 
+    width: 23%;
+    height: 30%;
+    border-style: solid;
+   border-width: 30px 30px 30px 30px;
+   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
 }
 
 .colonial-art {
-    width: 15%;
-    height: 45%;
- 
+    width: 35%;
+    height: 30%;
+    border-style: solid;
+   border-width: 30px 30px 30px 30px;
+   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
 }
 
 .cyber-art {
-    width: 15%;
-    height: 45%;
- 
+    width: 23%;
+    height: 30%;
+    border-style: solid;
+   border-width: 30px 30px 30px 30px;
+   -moz-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -webkit-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   -o-border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
+   border-image: url('https://cdn.pixabay.com/photo/2019/12/21/07/44/frame-4709861_960_720.png') 40 40 40 40 stretch stretch;
 }
 
 #slider {
@@ -77,10 +104,16 @@
  #slides {
     padding: 10px;
     border: 3px solid #ccc;
-    background: #fff;
+    background: rgb(253, 69, 69);
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    -moz-border-image: url() 6 82 49 29 repeat repeat;
+    -webkit-border-image: url() 6 82 49 29 repeat repeat;
+    -o-border-image: url() 6 82 49 29 repeat repeat;
+    border-image: url() 6 82 49 29 repeat repeat;
     position: relative;
-    z-index: 1;
  }
+
  #overflow {
     width: 100%;
     overflow: hidden;
@@ -100,7 +133,6 @@
  #slides .inner {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
-    line-height: 0;
     height: 500px;
  }
  #slides .slide {
@@ -110,19 +142,18 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #fff;
  }
- #slides .slide_1 {
-    background: #00171F;
+ .slide_1 {
+    background: #000000;
  }
- #slides .slide_2 {
-    background: #003459;
+ .slide_2 {
+    background: #000000;
  }
- #slides .slide_3 {
-    background: #007EA7;
+ .slide_3 {
+    background: #000000;
  }
- #slides .slide_4 {
-    background: #00A8E8;
+ .slide_4 {
+    background: #000000;
  }
  #controls {
     margin: -180px 0 0 0;
