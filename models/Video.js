@@ -15,10 +15,6 @@ const VideoSchema = new Schema(
       type: String,
       required: true,
     },
-    imgUrl: {
-      type: String,
-      required: true,
-    },
     runTime: {
       type: Number,
       required: true

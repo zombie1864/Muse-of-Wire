@@ -98,17 +98,7 @@ class CreationsPage extends React.Component {
                                             height="400px"
                                         />     
                                 </div>
-                                </div>                                
-                                {/* <div class="slide slide_5">
-                                <div class="slide-content">
-                                        <ReactPlayer
-                                            className="react-player"
-                                            url="https://www.youtube.com/watch?v=gotEdEs0FC0"
-                                            width="850px"
-                                            height="400px"
-                                        />     
-                                </div>
-                                </div> */}
+                                </div>                
                             </div>
                         </div>
                     </div>
