@@ -5,7 +5,9 @@ const Image = require('../../models/Image');
 
 
 router.get('/images', (req, res) => {
-  Image.find()
+  Image.find({
+    $text: { $search: req }
+  })
     .then(image => res.json({ image }))
 });
 

@@ -5,10 +5,9 @@ const Video = require('../../models/Video');
 // const video = require('../../seed/videoSeed')
 
 router.get('/videos', ( req, res ) => {
-    Video.find()
-    // Video.find({ 
-    //     $text: { $search: req } 
-    // })
+    Video.find({ 
+        $text: { $search: req } 
+    })
         .then(video => res.json({video}))
 }); 
 
