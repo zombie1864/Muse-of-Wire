@@ -1,5 +1,6 @@
 const Image = require('../models/Image');
 const mongoose = require('mongoose');
+const db = require("../config/keys").mongoURI;
 
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -93,7 +94,7 @@ const images = [
   })
 ]
 
-const stop = 0;
+let stop = 0;
 for (let i = 0; i < images.length; i++) {
   images[i].save((err, result) => {
     stop++;

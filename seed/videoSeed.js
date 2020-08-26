@@ -1,6 +1,11 @@
 const Video = require('../models/video') 
 const mongoose = require('mongoose'); 
+const db = require("../config/keys").mongoURI;
 
+mongoose
+    .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log("Connected to MongoDB successfully"))
+    .catch((err) => console.log(err));
 
 const videos = [
 
@@ -34,12 +39,10 @@ const videos = [
     })
 ];
 
-
-
-const stop = 0; 
+let stop = 0; 
 
 for ( let i = 0; i < videos.length; i++) {
-    video[ i ].save( function(err, result) {
+    videos[ i ].save( function(err, result) {
         stop++; 
         if ( stop === videos.length ) {
             exitLoop(); 
