@@ -11,14 +11,14 @@ const ImageSchema = new Schema(
       type: String,
       required: true,
     },
-    year: {
-      type: Number,
-      required: true,
-    },
     imageUrl: {
       type: String,
       required: true,
     },
+    mature: {
+      type: Boolean,
+      required: true
+    }
   },
   {
     timestamps: true,
