@@ -1,6 +1,7 @@
 import { 
   RECEIVE_SEARCH_RESULTS, 
-  RECEIVE_SEARCH_ERRORS 
+  RECEIVE_SEARCH_ERRORS,
+  CLEAR_SEARCH_ERRORS 
 } from "../actions/search_actions";
 
 const _nullErrors = [];
@@ -11,6 +12,8 @@ const SearchErrorsReducer = (state = _nullErrors, action) => {
     case RECEIVE_SEARCH_ERRORS:
       return action.errors;
     case RECEIVE_SEARCH_RESULTS:
+      return _nullErrors;
+    case CLEAR_SEARCH_ERRORS:
       return _nullErrors;
     default:
       return state;
