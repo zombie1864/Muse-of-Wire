@@ -9,6 +9,7 @@ class CreationsPage extends React.Component {
 
     componentDidMount() {
         this.renderModal();
+        // this.props.fetchVideo(this.props.match.params.id);
     }
 
     renderModal() {
@@ -46,6 +47,11 @@ class CreationsPage extends React.Component {
     }
 
     render() {
+        const video = this.props.Video 
+        debugger
+        // if ( !video ) {
+        //     return null; 
+        // }
         return (
             <div>
 <div className = 'creations-page-body'>
@@ -60,14 +66,22 @@ class CreationsPage extends React.Component {
                         <div id="overflow">
                             <div class="inner">
                                 <div class="slide slide_1">
-                                <div class="slide-content">
+                                {/* <div class="slide-content">
                                         <ReactPlayer
                                             className="react-player"
                                             url="https://www.youtube.com/watch?v=EmMTKdUAokM"
                                             width="850px"
                                             height="400px"
                                         />
-                                </div>
+                                </div>                                 */}
+                                {/* <div class="slide-content">
+                                        <ReactPlayer
+                                            className="react-player"
+                                            url={video.videoUrl}
+                                            width="850px"
+                                            height="400px"
+                                        />
+                                </div> */}
                                 </div>
                                 <div class="slide slide_2">
                                 <div class="slide-content">
