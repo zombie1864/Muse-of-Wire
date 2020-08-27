@@ -4,11 +4,21 @@ const mongoose = require('mongoose');
 const Video = require('../../models/Video');
 // const video = require('../../seed/videoSeed')
 
-router.get('/videos', ( req, res ) => {
+router.get('/videos/search', ( req, res ) => {
     Video.find({ 
         $text: { $search: req.body.query } 
     })
         .then(video => res.json({video}))
+}); 
+
+router.get('/videos', (req, res) => {
+    if (req.body.currentUser.status === "student") {
+        Video.find({ mature: false })
+            .then(video => res.json({ video }))
+    } else {
+        Video.find()
+            .then(video => res.json({ video }))
+    }
 }); 
 
 router.get('/videos/:id', (req, res) => {
