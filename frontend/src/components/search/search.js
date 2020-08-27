@@ -5,29 +5,29 @@ class Search extends React.Component {
     super(props);
 
     this.state = {
-      email: "",
-      selectedStatus: "",
-      password: "",
-      password2: "",
+      selectedCollection: "",
+      query: "",
       errors: {},
     };
 
+    // this.props.searchImages = this.props.searchImages.bind(this);
+    // this.props.searchVideos = this.props.searchVideos.bind(this);
+    // this.props.searchUsers = this.props.searchUsers.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
   }
 
-  // not entirely sure what this does
   componentWillReceiveProps(nextProps) {
-    if (nextProps.signedIn === true) {
-      this.props.history.push("/");
-    }
+    // if (nextProps.signedIn === true) {
+    //   this.props.history.push("/");
+    // }
 
     this.setState({ errors: nextProps.errors });
   }
 
   update(field) {
     return (e) => {
-      if (this.props.errors) this.props.clearErrors();
+      if (this.props.errors) this.props.clearSearchErrors();
       this.setState({
         [field]: e.currentTarget.value,
       });
@@ -36,13 +36,19 @@ class Search extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let user = {
-      email: this.state.email,
-      status: this.state.selectedStatus,
-      password: this.state.password,
-      password2: this.state.password2,
-    };
-    this.props.signup(user, this.props.history);
+    debugger
+    let query = this.state.query;
+    if (this.state.selectedCollection === "image") {
+        this.props.searchImages(query, this.props.history);
+    } else if (this.state.selectedCollection === "video") {
+        this.props.searchVideos(query, this.props.history);
+    } else if (this.state.selectedCollection === "user") {
+        this.props.searchUsers(query, this.props.history);
+    } else {
+        this.setState({
+          errors: {search: "You must select a category."}
+        });
+    }
   }
 
   renderErrors() {
@@ -66,7 +72,7 @@ class Search extends React.Component {
           <div className="body-inner-container-center-and-sidebar">
             <div className="body-center-container">
               <div className="session-container search-session">
-                <form>
+                <form onSubmit={this.handleSubmit}>
                   <div className="session-form">
 
                     <div className="search-selectors">
@@ -76,8 +82,8 @@ class Search extends React.Component {
                           className="session-form-radio-selector"
                           name="collection"
                           value="image"
-                          // checked={this.state.selectedStatus === "performer"}
-                          // onChange={this.update("selectedStatus")}
+                          checked={this.state.selectedCollection === "image"}
+                          onChange={this.update("selectedCollection")}
                         />
                         <span className="radio-button-selector-disc"></span>
                         Image
@@ -88,8 +94,8 @@ class Search extends React.Component {
                           className="session-form-radio-selector"
                           name="collection"
                           value="video"
-                          // checked={this.state.selectedStatus === "student"}
-                          // onChange={this.update("selectedStatus")}
+                          checked={this.state.selectedCollection === "video"}
+                          onChange={this.update("selectedCollection")}
                         />
                         <span className="radio-button-selector-disc"></span>
                         Video
@@ -100,8 +106,8 @@ class Search extends React.Component {
                           className="session-form-radio-selector"
                           name="collection"
                           value="user"
-                          // checked={this.state.selectedStatus === "member"}
-                          // onChange={this.update("selectedStatus")}
+                          checked={this.state.selectedCollection === "user"}
+                          onChange={this.update("selectedCollection")}
                         />
                         <span className="radio-button-selector-disc"></span>
                         User
@@ -111,13 +117,16 @@ class Search extends React.Component {
                     <input
                       className="session-form-input-field"
                       type="text"
-                      placeholder="Search coming soon"
+                      value={this.state.query}
+                      onChange={this.update("query")}
+                      placeholder="Choose category and enter search terms"
                     />
                     <input
                       className="session-submit-button"
                       type="submit"
                       value="Search"
                     />
+                    {this.renderErrors()}
                   </div>
                 </form> 
               </div>
