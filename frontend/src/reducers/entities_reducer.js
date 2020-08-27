@@ -3,7 +3,7 @@ import { combineReducers } from "redux";
 import videosReducer from './videos_reducer'
 
 const entitiesReducer = combineReducers({
-  users: usersReducer, 
+  // users: usersReducer, 
   videos: videosReducer
 });
 
