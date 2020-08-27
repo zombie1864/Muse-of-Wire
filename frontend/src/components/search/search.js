@@ -7,12 +7,10 @@ class Search extends React.Component {
     this.state = {
       selectedCollection: "",
       query: "",
-      errors: {},
+      results: {},
+      errors: {}
     };
 
-    // this.props.searchImages = this.props.searchImages.bind(this);
-    // this.props.searchVideos = this.props.searchVideos.bind(this);
-    // this.props.searchUsers = this.props.searchUsers.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
   }
@@ -39,16 +37,37 @@ class Search extends React.Component {
     debugger
     let query = this.state.query;
     if (this.state.selectedCollection === "image") {
-        this.props.searchImages(query, this.props.history);
+        this.setState({
+          results: this.props.searchImages(query)
+        })
     } else if (this.state.selectedCollection === "video") {
-        this.props.searchVideos(query, this.props.history);
+        this.setState({
+          results: this.props.searchVideos(query)
+        })
     } else if (this.state.selectedCollection === "user") {
-        this.props.searchUsers(query, this.props.history);
+      this.setState({
+        results: this.props.searchUsers(query)
+      })
     } else {
+      // this is a brutish way of handling the error case, and as yet
+      //   doesn't clear upon update
         this.setState({
           errors: {search: "You must select a category."}
         });
     }
+
+  }
+
+  renderSearchResults() {
+    return (
+      <ul className="rendered-results-list">
+        {Object.keys(this.state.results).map((result, i) => (
+          <li className="rendered-result" key={`result-${i}`}>
+            {this.state.results[result]}
+          </li>
+        ))}
+      </ul>
+    );
   }
 
   renderErrors() {
@@ -71,6 +90,9 @@ class Search extends React.Component {
         <div className="body-container search-background-image">
           <div className="body-inner-container-center-and-sidebar">
             <div className="body-center-container">
+              <div className="search-results-container">
+                
+              </div>
               <div className="session-container search-session">
                 <form onSubmit={this.handleSubmit}>
                   <div className="session-form">
