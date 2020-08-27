@@ -33,8 +33,8 @@ app.use(bodyParser.json());
 app.use("/api/users", users);
 app.use('/api/videos', videos);
 app.use('/api/images', images);
-app.use('/api/images/search', images);
-app.use('/api/videos/search', videos);
+// app.use('/api/images/search', images);
+// app.use('/api/videos/search', videos);
 
 // for testing
 const port = process.env.PORT || 5000;

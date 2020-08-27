@@ -17,14 +17,15 @@ export const clearSearchErrors = () => ({
   type: CLEAR_SEARCH_ERRORS
 })
 
-export const searchImages = imageQuery => dispatch => (
-  SearchAPIUtil.searchImages(imageQuery)
+export const searchImages = imageQuery => dispatch => {
+  debugger
+  return SearchAPIUtil.searchImages(imageQuery)
   .then(searchResults => (
     dispatch(receiveSearchResults(searchResults))
   ), err => (
     dispatch(receiveSearchErrors(err.response.data))
   ))
-);
+};
 
 export const searchVideos = videoQuery => dispatch => (
   SearchAPIUtil.searchVideos(videoQuery)

@@ -15,6 +15,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
+  debugger 
   return {
     searchImages: (imageQuery) => dispatch(searchImages(imageQuery)),
     searchVideos: (videoQuery) => dispatch(searchVideos(videoQuery)),
