@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
 
 class Search extends React.Component {
   constructor(props) {
@@ -34,21 +35,26 @@ class Search extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    debugger
-    let query = this.state.query;
+    let searchData = {
+      query: this.state.query, 
+      currentUser: this.props.currentUser
+    };
+    // debugger
     if (this.state.selectedCollection === "image") {
         this.setState({
-          results: this.props.searchImages(query)
+          results: this.props.searchImages(searchData)
         })
     } else if (this.state.selectedCollection === "video") {
         this.setState({
-          results: this.props.searchVideos(query)
+          results: this.props.searchVideos(searchData)
         })
-    } else if (this.state.selectedCollection === "user") {
-      this.setState({
-        results: this.props.searchUsers(query)
-      })
-    } else {
+    } 
+    // else if (this.state.selectedCollection === "user") {
+    //   this.setState({
+    //     results: this.props.searchUsers(query)
+    //   })
+    // } 
+    else {
       // this is a brutish way of handling the error case, and as yet
       //   doesn't clear upon update
         this.setState({
@@ -91,7 +97,7 @@ class Search extends React.Component {
           <div className="body-inner-container-center-and-sidebar">
             <div className="body-center-container">
               <div className="search-results-container">
-                
+                {this.renderSearchResults()}
               </div>
               <div className="session-container search-session">
                 <form onSubmit={this.handleSubmit}>
@@ -160,4 +166,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+export default withRouter(Search);

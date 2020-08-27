@@ -5,6 +5,7 @@ const Image = require('../../models/Image');
 
 
 router.get('/images/search', (req, res) => {
+  debugger
   Image.find({
     $text: { $search: req.body.query }
   })

@@ -35,11 +35,11 @@ export const searchVideos = videoQuery => dispatch => (
   ))
 );
 
-export const searchUsers = userQuery => dispatch => (
-  SearchAPIUtil.searchUsers(userQuery)
-  .then(searchResults => (
-    dispatch(receiveSearchResults(searchResults))
-  ), err => (
-    dispatch(receiveSearchErrors(err.response.data))
-  ))
-);
+// export const searchUsers = userQuery => dispatch => (
+//   SearchAPIUtil.searchUsers(userQuery)
+//   .then(searchResults => (
+//     dispatch(receiveSearchResults(searchResults))
+//   ), err => (
+//     dispatch(receiveSearchErrors(err.response.data))
+//   ))
+// );

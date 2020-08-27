@@ -7,6 +7,7 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const videos = require('./routes/api/videos')
 const path = require('path'); 
+const images = require('./routes/api/images')
 
 require('dotenv').config();
 
@@ -31,6 +32,9 @@ app.use(bodyParser.json());
 
 app.use("/api/users", users);
 app.use('/api/videos', videos);
+app.use('/api/images', images);
+app.use('/api/images/search', images);
+app.use('/api/videos/search', videos);
 
 // for testing
 const port = process.env.PORT || 5000;
