@@ -41,10 +41,10 @@ class Search extends React.Component {
     };
     if (this.state.selectedCollection === "image") {
       debugger
-      this.props.searchImages(searchData) // TESTING PURPOSES
-        // this.setState({
-        //   results: this.props.searchImages(searchData)
-        // })
+      // this.props.searchImages(searchData) // TESTING PURPOSES
+        this.setState({
+          results: this.props.searchImages(searchData)
+        })
     } else if (this.state.selectedCollection === "video") {
         this.setState({
           results: this.props.searchVideos(searchData)

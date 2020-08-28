@@ -5,11 +5,13 @@ const Image = require('../../models/Image');
 
 
 router.get('/search', (req, res) => {
-  // debugger
+  debugger
+  // Image.find()
   Image.find({
     $text: { $search: req.body.query }
-  }).then(images => console.log(images))
+  })
     .then(images => res.json({ images }))
+    .catch(errors => res.json({ errors })); 
 });
 
 router.get('/images', (req, res) => {
