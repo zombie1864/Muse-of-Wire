@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router(); 
 const mongoose = require('mongoose'); 
 const Video = require('../../models/Video');
-// const video = require('../../seed/videoSeed')
 
 router.post('/search', (req, res) => {
     const query = req.body.query;
@@ -10,7 +9,7 @@ router.post('/search', (req, res) => {
         { $text: { $search: query } }, 
         { score: { $meta: "textScore" } })
         .sort( { score: { $meta: "textScore"}})
-        .then(videos => res.json({ videos }))
+        .then(results => res.json({ results }))
         .catch(errors => res.json({ errors }));
 });
 
@@ -18,9 +17,11 @@ router.post('/videos', (req, res) => {
     if (req.body.currentUser.status === "student") {
         Video.find({ mature: false })
             .then(video => res.json({ video }))
-    } else {
-        Video.find()
+            .catch(errors => res.json({ errors })); 
+        } else {
+            Video.find()
             .then(video => res.json({ video }))
+            .catch(errors => res.json({ errors })); 
     }
 }); 
 

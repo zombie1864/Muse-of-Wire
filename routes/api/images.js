@@ -11,7 +11,7 @@ router.post('/search', (req, res) => {
     { $text: { $search: query } },
     { score: { $meta: "textScore" } })
     .sort({ score: { $meta: "textScore" } })
-    .then(images => res.json({ images }))
+    .then(results => res.json({ results }))
     .catch(errors => res.json({ errors }));
 });
 
