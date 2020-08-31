@@ -4,11 +4,12 @@ const mongoose = require('mongoose');
 const Image = require('../../models/Image');
 
 
-router.get('/search', (req, res) => {
+router.post('/search', (req, res) => {
+  const query = req.body.query;
   debugger
   // Image.find()
   Image.find({
-    $text: { $search: 'Red' } //req.body.query
+    $text: { $search: query } //req.body.query
     // $text: { $search: req.body.query } 
   })
     .then(images => res.json({ images }))
