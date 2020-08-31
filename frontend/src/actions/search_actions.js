@@ -1,4 +1,5 @@
-import * as SearchAPIUtil from '../util/search_api_util';
+import { apiSearchImages, apiSearchVideos } from '../util/search_api_util';
+// import searchImages from '../util/search_api_util';
 export const RECEIVE_SEARCH_RESULTS = "RECEIVE_SEARCH_RESULTS";
 export const RECEIVE_SEARCH_ERRORS = "RECEIVE_SEARCH_ERRORS";
 export const CLEAR_SEARCH_ERRORS = "CLEAR_SEARCH_ERRORS";
@@ -18,17 +19,17 @@ export const clearSearchErrors = () => ({
 })
 
 export const searchImages = imageQuery => dispatch => {
-  debugger
-  return SearchAPIUtil.searchImages(imageQuery)
-  .then(searchResults => (
+  return apiSearchImages(imageQuery)
+  .then(searchResults => {
+    debugger
     dispatch(receiveSearchResults(searchResults))
-  ), err => (
-    dispatch(receiveSearchErrors(err.response.data))
-  ))
-};
-
+  }, err => (
+      dispatch(receiveSearchErrors(err.response.data))
+      ))
+    };
+    
 export const searchVideos = videoQuery => dispatch => (
-  SearchAPIUtil.searchVideos(videoQuery)
+  apiSearchVideos(videoQuery)
   .then(searchResults => (
     dispatch(receiveSearchResults(searchResults))
   ), err => (

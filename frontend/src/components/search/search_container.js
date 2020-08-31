@@ -8,14 +8,18 @@ import {
 import Search from './search';
 
 const mapStateToProps = (state) => {
+  debugger 
   return {
     currentUser: state.session.user,
-    errors: state.errors.search
+    errors: state.errors.search, 
+    results: state.search.data.images // DID NOT WORK 
+    // results: state.search.data // DID NOT WORK 
+    // results: state.search.results 
+    // results: state.search // DID NOT WORK 
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
-  debugger 
   return {
     searchImages: (imageQuery) => dispatch(searchImages(imageQuery)),
     searchVideos: (videoQuery) => dispatch(searchVideos(videoQuery)),

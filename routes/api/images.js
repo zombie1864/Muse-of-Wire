@@ -8,7 +8,8 @@ router.get('/search', (req, res) => {
   debugger
   // Image.find()
   Image.find({
-    $text: { $search: req.body.query }
+    $text: { $search: 'Red' } //req.body.query
+    // $text: { $search: req.body.query } 
   })
     .then(images => res.json({ images }))
     .catch(errors => res.json({ errors })); 

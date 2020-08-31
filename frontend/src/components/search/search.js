@@ -20,8 +20,7 @@ class Search extends React.Component {
     // if (nextProps.signedIn === true) {
     //   this.props.history.push("/");
     // }
-
-    this.setState({ errors: nextProps.errors });
+    this.setState({ errors: nextProps.errors, results: nextProps.results });
   }
 
   update(field) {
@@ -40,11 +39,11 @@ class Search extends React.Component {
       currentUser: this.props.currentUser
     };
     if (this.state.selectedCollection === "image") {
-      debugger
       // this.props.searchImages(searchData) // TESTING PURPOSES
-        this.setState({
-          results: this.props.searchImages(searchData)
-        })
+      this.setState({
+        results: this.props.searchImages(searchData)
+      })
+      debugger
     } else if (this.state.selectedCollection === "video") {
         this.setState({
           results: this.props.searchVideos(searchData)
@@ -68,9 +67,10 @@ class Search extends React.Component {
   renderSearchResults() {
     return (
       <ul className="rendered-results-list">
-        {Object.keys(this.state.results).map((result, i) => (
+        {this.props.results.map((result, i) => (
           <li className="rendered-result" key={`result-${i}`}>
-            {this.state.results[result]}
+            {/* {this.props.results[result]} */}
+            {Object.values(result.title)}
           </li>
         ))}
       </ul>
