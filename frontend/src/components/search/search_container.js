@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
   return {
     currentUser: state.session.user,
     errors: state.errors.search, 
-    results: state.search.data.images // DID NOT WORK 
+    results: state.search.data.images 
     // results: state.search.data // DID NOT WORK 
     // results: state.search.results 
     // results: state.search // DID NOT WORK 
