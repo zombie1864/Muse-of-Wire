@@ -2,13 +2,13 @@ const express = require('express');
 const router = express.Router(); 
 const mongoose = require('mongoose'); 
 const Video = require('../../models/Video');
-// const video = require('../../seed/videoSeed')
 
-router.get('/videos/search', ( req, res ) => {
+router.get('/search', ( req, res ) => {
     Video.find({ 
         $text: { $search: req.body.query } 
     })
-        .then(video => res.json({video}))
+        .then(results => res.json({results}))
+        .catch(errors => res.json({ errors })); 
 }); 
 
 router.get('/videos', (req, res) => {

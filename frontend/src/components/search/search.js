@@ -8,8 +8,8 @@ class Search extends React.Component {
     this.state = {
       selectedCollection: "",
       query: "",
-      results: {},
-      errors: {}
+      // results: this.props.results,
+      errors: this.props.errors
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -20,7 +20,11 @@ class Search extends React.Component {
     // if (nextProps.signedIn === true) {
     //   this.props.history.push("/");
     // }
-    this.setState({ errors: nextProps.errors, results: nextProps.results });
+    this.setState({ 
+      errors: nextProps.errors,
+      results: nextProps.results
+      // results: (nextProps.imageResults + nextProps.videoResults)
+      });
   }
 
   update(field) {
@@ -39,11 +43,9 @@ class Search extends React.Component {
       currentUser: this.props.currentUser
     };
     if (this.state.selectedCollection === "image") {
-      // this.props.searchImages(searchData) // TESTING PURPOSES
       this.setState({
         results: this.props.searchImages(searchData)
       })
-      debugger
     } else if (this.state.selectedCollection === "video") {
         this.setState({
           results: this.props.searchVideos(searchData)
@@ -64,23 +66,32 @@ class Search extends React.Component {
 
   }
 
+
+  
   renderSearchResults() {
-    return (
-      <ul className="rendered-results-list">
-        {this.props.results.map((result, i) => (
+    // let combinedResults = [];
+    // let imageResults = this.props.imageResults;
+    // let videoResults = this.props.videoResults;
+    // let userResults = this.props.userResults;
+    // combinedResults = [...imageResults, ...videoResults];
+    if (this.props.results) {
+      return (
+        <ul className="rendered-results-list">
+          {this.props.results.map((result, i) => (
           <li className="rendered-result" key={`result-${i}`}>
-            {/* {this.props.results[result]} */}
-            {Object.values(result.title)}
+            <img className="search-result-image" src={result.imageUrl} />
+            {result.title}
           </li>
         ))}
       </ul>
     );
+    }
   }
 
   renderErrors() {
     return (
       <ul className="rendered-errors-list">
-        {Object.keys(this.state.errors).map((error, i) => (
+        {this.state.errors.map((error, i) => (
           <li className="rendered-error" key={`error-${i}`}>
             {this.state.errors[error]}
           </li>
@@ -97,9 +108,7 @@ class Search extends React.Component {
         <div className="body-container search-background-image">
           <div className="body-inner-container-center-and-sidebar">
             <div className="body-center-container">
-              <div className="search-results-container">
-                {this.renderSearchResults()}
-              </div>
+
               <div className="session-container search-session">
                 <form onSubmit={this.handleSubmit}>
                   <div className="session-form">
@@ -129,7 +138,7 @@ class Search extends React.Component {
                         <span className="radio-button-selector-disc"></span>
                         Video
                       </label>
-                      <label className="radio-button-container">
+                      {/* <label className="radio-button-container">
                         <input
                           type="radio"
                           className="session-form-radio-selector"
@@ -140,7 +149,7 @@ class Search extends React.Component {
                         />
                         <span className="radio-button-selector-disc"></span>
                         User
-                      </label>
+                      </label> */}
                     </div>
                     
                     <input
@@ -158,6 +167,9 @@ class Search extends React.Component {
                     {this.renderErrors()}
                   </div>
                 </form> 
+                <div className="search-results-container">
+                  {this.renderSearchResults()}
+                </div>
               </div>
             </div>
           </div>

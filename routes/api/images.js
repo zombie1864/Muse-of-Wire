@@ -11,7 +11,7 @@ router.get('/search', (req, res) => {
     $text: { $search: 'Red' } //req.body.query
     // $text: { $search: req.body.query } 
   })
-    .then(images => res.json({ images }))
+    .then(results => res.json({ results }))
     .catch(errors => res.json({ errors })); 
 });
 
