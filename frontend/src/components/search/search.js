@@ -91,9 +91,9 @@ class Search extends React.Component {
   renderErrors() {
     return (
       <ul className="rendered-errors-list">
-        {this.state.errors.map((error, i) => (
+        {this.props.errors.map((error, i) => (
           <li className="rendered-error" key={`error-${i}`}>
-            {this.state.errors[error]}
+            {this.props.errors[error]}
           </li>
         ))}
       </ul>
@@ -153,7 +153,7 @@ class Search extends React.Component {
                     </div>
                     
                     <input
-                      className="session-form-input-field"
+                      className="session-form-input-field search-input-field"
                       type="text"
                       value={this.state.query}
                       onChange={this.update("query")}

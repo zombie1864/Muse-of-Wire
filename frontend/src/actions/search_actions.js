@@ -20,7 +20,6 @@ export const clearSearchErrors = () => ({
 export const searchImages = imageQuery => dispatch => {
   return apiSearchImages(imageQuery)
   .then(searchResults => {
-    debugger
     dispatch(receiveSearchResults(searchResults))
   }, err => (
       dispatch(receiveSearchErrors(err.response.data))
