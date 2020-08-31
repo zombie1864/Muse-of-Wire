@@ -4,24 +4,26 @@ const mongoose = require('mongoose');
 const Image = require('../../models/Image');
 
 
-router.get('/search', (req, res) => {
+router.post('/search', (req, res) => {
+  const query = req.body.query;
   debugger
-  // Image.find()
-  Image.find({
-    $text: { $search: 'Red' } //req.body.query
-    // $text: { $search: req.body.query } 
-  })
+  Image.find(
+    { $text: { $search: query } },
+    { score: { $meta: "textScore" } })
+    .sort({ score: { $meta: "textScore" } })
     .then(images => res.json({ images }))
-    .catch(errors => res.json({ errors })); 
+    .catch(errors => res.json({ errors }));
 });
 
-router.get('/images', (req, res) => {
+router.post('/images', (req, res) => {
   if (req.body.currentUser.status === "student") {
     Image.find({ mature: false })
       .then(images => res.json({ images }))
+      .catch(errors => res.json({ errors })); 
   } else {
     Image.find()
       .then(images => res.json({ images }))
+      .catch(errors => res.json({ errors })); 
   }
 }); 
 

@@ -4,14 +4,17 @@ const mongoose = require('mongoose');
 const Video = require('../../models/Video');
 // const video = require('../../seed/videoSeed')
 
-router.get('/videos/search', ( req, res ) => {
-    Video.find({ 
-        $text: { $search: req.body.query } 
-    })
-        .then(video => res.json({video}))
-}); 
+router.post('/search', (req, res) => {
+    const query = req.body.query;
+    Video.find(
+        { $text: { $search: query } }, 
+        { score: { $meta: "textScore" } })
+        .sort( { score: { $meta: "textScore"}})
+        .then(videos => res.json({ videos }))
+        .catch(errors => res.json({ errors }));
+});
 
-router.get('/videos', (req, res) => {
+router.post('/videos', (req, res) => {
     if (req.body.currentUser.status === "student") {
         Video.find({ mature: false })
             .then(video => res.json({ video }))
