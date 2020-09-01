@@ -80,7 +80,11 @@ class Search extends React.Component {
             <li className="rendered-result" key={`result-${i}`}>
               <div className="spacer-div-search">
                 <div className="search-result-image-container">
-                  <img className="search-result-image" src={result.imageUrl} />
+                  <img 
+                    className="search-result-image" 
+                    src={result.imageUrl} 
+                    alt={result.description}
+                  />
                 </div>
               </div>
               <div className="search-result-title">
