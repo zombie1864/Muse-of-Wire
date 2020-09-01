@@ -24,7 +24,7 @@ const videos = [
         mature: false 
     }),
     new Video({
-        title: '"Lament" | Juilliard Community Cadence', 
+        title: 'Lament | Juilliard Community Cadence', 
         description: 'Watch the ninth Community Cadence video, composed and performed on violin by Lauren Vandervelden, featuring Juilliard students and Sphinx Performance Academy at Juilliard 2020 students. The Community Cadence series amplifies Juilliard student voices as artist citizens.As we move into a new way of online learning, sharing, and collaborating with social distancing in mind, the role that the arts play in connecting us is more important than ever. We present #JuilliardThrives, to amplify our student and faculty voices as we share the art that is in our minds and hearts with the world.', 
         videoUrl: "https://www.youtube.com/watch?v=eVahCryUXw0", 
         runTime: 3.13, 

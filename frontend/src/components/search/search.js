@@ -15,6 +15,7 @@ class Search extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearedErrors = false;
+    this.renderModal = this.renderModal.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -26,6 +27,10 @@ class Search extends React.Component {
       results: nextProps.results
       // results: (nextProps.imageResults + nextProps.videoResults)
       });
+  }
+
+  componentDidUpdate() {
+    this.renderModal();
   }
 
   update(field) {
@@ -67,21 +72,20 @@ class Search extends React.Component {
 
   }
 
-
-  
   renderSearchResults() {
 
     if (this.props.results && this.props.results.length > 0) {
       let testObject = this.props.results.slice(0, 1)[0];
       if (testObject.imageUrl !== undefined){
         return (
+          <>
           <ul className="rendered-results-list">
             {this.props.results.map((result, i) => (
             <li className="rendered-result" key={`result-${i}`}>
               <div className="spacer-div-search">
                 <div className="search-result-image-container">
                   <img 
-                    className="search-result-image" 
+                    className="search-result-image images" 
                     src={result.imageUrl} 
                     alt={result.description}
                   />
@@ -93,6 +97,7 @@ class Search extends React.Component {
             </li>
             ))}
           </ul>
+          </>
         );
       } else if (testObject.videoUrl !== undefined){
         return (
@@ -130,7 +135,39 @@ class Search extends React.Component {
     );
   }
 
+  renderModal() {
+    const modal = document.getElementById('imgModal');
+    const images = document.getElementsByClassName('images');
+    const modalImg = document.getElementById("modal-image");
+    const captionText = document.getElementById("caption");
 
+    for (let i = 0; i < images.length; i++) {
+      const img = images[i];
+      img.onclick = function (e) {
+        console.log(e);
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+
+        document.body.style.overflow = "hidden";
+        document.body.style.height = "100%";
+      }
+    }
+
+    const span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+    }
+
+    modalImg.onclick = function () {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+    }
+  }
 
   render() {
     return (
@@ -181,7 +218,11 @@ class Search extends React.Component {
                         User
                       </label> */}
                     </div>
-                    
+                    <div id="imgModal" className="modal">
+                      <span className="close">x</span>
+                      <img className="modal-content" id="modal-image" />
+                      <div id="caption" ></div>
+                    </div>
                     <input
                       className="session-form-input-field search-input-field"
                       type="text"
