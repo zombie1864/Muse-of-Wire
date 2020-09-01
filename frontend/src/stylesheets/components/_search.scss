@@ -68,7 +68,7 @@ li.rendered-result:last-child {
   max-height: 150px;
 }
 
-.search-result-image-title {
+.search-result-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,4 +80,8 @@ li.rendered-result:last-child {
   font-weight: 700;
 }
 
-// placeholder page currently uses session_form.scss styling
+.search-result-video {
+  max-width: 150px;
+  max-height: 150px;
+}
+

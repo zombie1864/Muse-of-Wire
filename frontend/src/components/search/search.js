@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
 import { withRouter } from "react-router-dom";
 
 class Search extends React.Component {
@@ -70,23 +71,46 @@ class Search extends React.Component {
   
   renderSearchResults() {
 
-    if (this.props.results) {
-      return (
-        <ul className="rendered-results-list">
-          {this.props.results.map((result, i) => (
-          <li className="rendered-result" key={`result-${i}`}>
-            <div className="spacer-div-search">
-              <div className="search-result-image-container">
-                <img className="search-result-image" src={result.imageUrl} />
+    if (this.props.results && this.props.results.length > 0) {
+      let testObject = this.props.results.slice(0, 1)[0];
+      if (testObject.imageUrl !== undefined){
+        return (
+          <ul className="rendered-results-list">
+            {this.props.results.map((result, i) => (
+            <li className="rendered-result" key={`result-${i}`}>
+              <div className="spacer-div-search">
+                <div className="search-result-image-container">
+                  <img className="search-result-image" src={result.imageUrl} />
+                </div>
               </div>
-            </div>
-            <div className="search-result-image-title">
-              {result.title}
-            </div>
-          </li>
-        ))}
-      </ul>
-    );
+              <div className="search-result-title">
+                {result.title}
+              </div>
+            </li>
+            ))}
+          </ul>
+        );
+      } else if (testObject.videoUrl !== undefined){
+        return (
+          <ul className="rendered-results-list">
+            {this.props.results.map((result, i) => (
+              <li className="rendered-result" key={`result-${i}`}>
+                <div className="spacer-div-search">
+                  <div className="search-result-image-container">
+                    <ReactPlayer
+                      className="search-result-video"
+                      url={result.videoUrl}
+                    />
+                  </div>
+                </div>
+                <div className="search-result-title">
+                  {result.title}
+                </div>
+              </li>
+            ))}
+          </ul>
+        );
+      }
     }
   }
 
