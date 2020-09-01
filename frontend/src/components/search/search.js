@@ -69,18 +69,20 @@ class Search extends React.Component {
 
   
   renderSearchResults() {
-    // let combinedResults = [];
-    // let imageResults = this.props.imageResults;
-    // let videoResults = this.props.videoResults;
-    // let userResults = this.props.userResults;
-    // combinedResults = [...imageResults, ...videoResults];
+
     if (this.props.results) {
       return (
         <ul className="rendered-results-list">
           {this.props.results.map((result, i) => (
           <li className="rendered-result" key={`result-${i}`}>
-            <img className="search-result-image" src={result.imageUrl} />
-            {result.title}
+            <div className="spacer-div-search">
+              <div className="search-result-image-container">
+                <img className="search-result-image" src={result.imageUrl} />
+              </div>
+            </div>
+            <div className="search-result-image-title">
+              {result.title}
+            </div>
           </li>
         ))}
       </ul>
@@ -107,7 +109,7 @@ class Search extends React.Component {
       <main>
         <div className="body-container search-background-image">
           <div className="body-inner-container-center-and-sidebar">
-            <div className="body-center-container">
+            <div className="body-center-container body-search-container">
 
               <div className="session-container search-session">
                 <form onSubmit={this.handleSubmit}>
