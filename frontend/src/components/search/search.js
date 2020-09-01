@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
 import { withRouter } from "react-router-dom";
 
 class Search extends React.Component {
@@ -69,31 +70,60 @@ class Search extends React.Component {
 
   
   renderSearchResults() {
-    // let combinedResults = [];
-    // let imageResults = this.props.imageResults;
-    // let videoResults = this.props.videoResults;
-    // let userResults = this.props.userResults;
-    // combinedResults = [...imageResults, ...videoResults];
-    if (this.props.results) {
-      return (
-        <ul className="rendered-results-list">
-          {this.props.results.map((result, i) => (
-          <li className="rendered-result" key={`result-${i}`}>
-            <img className="search-result-image" src={result.imageUrl} />
-            {result.title}
-          </li>
-        ))}
-      </ul>
-    );
+
+    if (this.props.results && this.props.results.length > 0) {
+      let testObject = this.props.results.slice(0, 1)[0];
+      if (testObject.imageUrl !== undefined){
+        return (
+          <ul className="rendered-results-list">
+            {this.props.results.map((result, i) => (
+            <li className="rendered-result" key={`result-${i}`}>
+              <div className="spacer-div-search">
+                <div className="search-result-image-container">
+                  <img 
+                    className="search-result-image" 
+                    src={result.imageUrl} 
+                    alt={result.description}
+                  />
+                </div>
+              </div>
+              <div className="search-result-title">
+                {result.title}
+              </div>
+            </li>
+            ))}
+          </ul>
+        );
+      } else if (testObject.videoUrl !== undefined){
+        return (
+          <ul className="rendered-results-list">
+            {this.props.results.map((result, i) => (
+              <li className="rendered-result" key={`result-${i}`}>
+                <div className="spacer-div-search">
+                  <div className="search-result-image-container">
+                    <ReactPlayer
+                      className="search-result-video"
+                      url={result.videoUrl}
+                    />
+                  </div>
+                </div>
+                <div className="search-result-title">
+                  {result.title}
+                </div>
+              </li>
+            ))}
+          </ul>
+        );
+      }
     }
   }
 
   renderErrors() {
     return (
       <ul className="rendered-errors-list">
-        {this.state.errors.map((error, i) => (
+        {this.props.errors.map((error, i) => (
           <li className="rendered-error" key={`error-${i}`}>
-            {this.state.errors[error]}
+            {this.props.errors[error]}
           </li>
         ))}
       </ul>
@@ -107,7 +137,7 @@ class Search extends React.Component {
       <main>
         <div className="body-container search-background-image">
           <div className="body-inner-container-center-and-sidebar">
-            <div className="body-center-container">
+            <div className="body-center-container body-search-container">
 
               <div className="session-container search-session">
                 <form onSubmit={this.handleSubmit}>
@@ -153,7 +183,7 @@ class Search extends React.Component {
                     </div>
                     
                     <input
-                      className="session-form-input-field"
+                      className="session-form-input-field search-input-field"
                       type="text"
                       value={this.state.query}
                       onChange={this.update("query")}
