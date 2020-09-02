@@ -31,6 +31,15 @@
 	animation-duration: 1s;
 }
 
+.splash-site-description {
+  position: absolute;
+  display: flex;
+  padding: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+
 .splash-image {
   width: 33vw;
   transition-duration: .4s;
