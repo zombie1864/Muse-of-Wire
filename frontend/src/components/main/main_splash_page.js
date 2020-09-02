@@ -16,7 +16,7 @@ class MainSplashPage extends React.Component {
               />
             </div>
             <div className="splash-image-container">
-              <Link to="/hello">
+              <Link to="/login">
                 <img
                   className="splash-image"
                   src="https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
