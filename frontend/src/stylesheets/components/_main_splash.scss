@@ -34,17 +34,21 @@
 #splash-site-description {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+  width: 90%;
   padding: 3%;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vmax;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #000000;
   color: #ffffff;
   transition-property: opacity;
-  transition-duration: 2.5s;
+  transition-duration: 1s;
   transition-timing-function: ease-in;
-  transition-delay: .5s;
-}
-
-.faded-in {
-  opacity: 1;
+  transition-delay: 2s;
 }
 
 .faded-out {

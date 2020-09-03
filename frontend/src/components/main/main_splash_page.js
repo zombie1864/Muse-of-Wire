@@ -24,8 +24,6 @@ class MainSplashPage extends React.Component {
       currentSlide: ""
     }
 
-
-
   };
   
   advanceSlide = () => {
@@ -36,20 +34,15 @@ class MainSplashPage extends React.Component {
     })
   }
 
-  // fadeInOut = () => {
-  //   let el = document.getElementById("splash-site-description");
-  //   if (el.classList.contains("faded-in")) {
-  //     el.classList.add("faded-out");
-  //     el.classList.remove("faded-in");
-  //   } else {
-  //     el.classList.add("faded-in");
-  //     el.classList.remove("faded-out");
-  //   }
-  // }
+ fadeSlide = () => {
+    let el = document.getElementById("splash-site-description");
+    el.classList.toggle("faded-out");
+}
 
   componentDidMount() {
-    // setInterval(this.fadeInOut, 3000);
+    this.advanceSlide();
     setInterval(this.advanceSlide, 6000);
+    setInterval(this.fadeSlide, 3000);
   };
 
 
