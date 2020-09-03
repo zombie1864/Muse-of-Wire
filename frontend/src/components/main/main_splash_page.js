@@ -21,7 +21,9 @@ class MainSplashPage extends React.Component {
         'Support emerging artists',
         'Discover your next passion'
       ],
-      currentSlide: ""
+      currentSlide: "",
+      slideTimer: "",
+      fadeTimer: ""
     }
 
   };
@@ -41,9 +43,14 @@ class MainSplashPage extends React.Component {
 
   componentDidMount() {
     this.advanceSlide();
-    setInterval(this.advanceSlide, 6000);
-    setInterval(this.fadeSlide, 3000);
+    this.slideTimer = setInterval(this.advanceSlide, 6000);
+    this.fadeTimer = setInterval(this.fadeSlide, 3000);
   };
+
+  componentWillUnmount() {
+    clearInterval(this.slideTimer);
+    clearInterval(this.fadeTimer);
+  }
 
 
   render() {
