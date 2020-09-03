@@ -4,7 +4,57 @@ import { Link } from "react-router-dom";
 import Footer from "../footer/footer";
 
 class MainSplashPage extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      slideIndex: 0,
+      textSlides: [
+        'Connecting the world to a vital Artistic community',
+        'Innovative performance venues',
+        'Virtual galleries',
+        'MUSE OF WIRE exploits digital age tools to conquer digital age isolation',
+        'Sign up to become a member',
+        'Student memberships with curated content',
+        'Become a creator and share your Art',
+        'Meet and collaborate with worldwide talent',
+        'Support emerging artists',
+        'Discover your next passion'
+      ],
+      currentSlide: ""
+    }
+
+
+
+  };
+  
+  advanceSlide = () => {
+    const { slideIndex } = this.state;
+    this.setState( {
+      slideIndex: slideIndex + 1,
+      currentSlide: this.state.textSlides[this.state.slideIndex % this.state.textSlides.length]
+    })
+  }
+
+  // fadeInOut = () => {
+  //   let el = document.getElementById("splash-site-description");
+  //   if (el.classList.contains("faded-in")) {
+  //     el.classList.add("faded-out");
+  //     el.classList.remove("faded-in");
+  //   } else {
+  //     el.classList.add("faded-in");
+  //     el.classList.remove("faded-out");
+  //   }
+  // }
+
+  componentDidMount() {
+    // setInterval(this.fadeInOut, 3000);
+    setInterval(this.advanceSlide, 6000);
+  };
+
+
   render() {
+
     return (
       <main>
         <div className="body-container splash-background-image">
@@ -17,9 +67,9 @@ class MainSplashPage extends React.Component {
             </div>
             <div className="splash-image-container">
               <Link to="/login">
-                <div className="splash-site-description">
-                  Connecting the world to a vital Artistic community, MUSE OF WIRE exploits digital age tools to conquer digital age isolation.
-                </div>
+                <div id="splash-site-description">
+                  {this.state.currentSlide}
+               </div>
                 <img
                   className="splash-image"
                   src="https://images.pexels.com/photos/1781710/pexels-photo-1781710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"

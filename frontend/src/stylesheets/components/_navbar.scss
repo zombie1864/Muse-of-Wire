@@ -39,16 +39,16 @@ nav {
     align-items: center;
     height: 100vh;
     background-color: #e80037;
+}
     
-    img {
-      height: 100%;
-      width: 100%;
-    }
-    
-    a {
-      display: block;
-    }
-  }
+img.navigation-container {
+  height: 100%;
+  width: 100%;
+}
+
+a.navigation-container {
+  display: block;
+}
 
 .m-w-logo-container {
   display: inline-block;
@@ -78,7 +78,7 @@ nav {
 }
 
 .m-w-logo-container:active .m-w-logo-image-hover {
-  filter: grayscale(100%);;
+  filter: grayscale(100%);
 }
 
 .authenticated-user-links {
