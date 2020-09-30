@@ -66,14 +66,14 @@ class CreationsPage extends React.Component {
                         <div id="overflow">
                             <div class="inner">
                                 <div class="slide slide_1">
-                                {/* <div class="slide-content">
+                                <div class="slide-content">
                                         <ReactPlayer
                                             className="react-player"
                                             url="https://www.youtube.com/watch?v=EmMTKdUAokM"
                                             width="850px"
                                             height="400px"
                                         />
-                                </div>                                 */}
+                                </div>                                
                                 {/* <div class="slide-content">
                                         <ReactPlayer
                                             className="react-player"
